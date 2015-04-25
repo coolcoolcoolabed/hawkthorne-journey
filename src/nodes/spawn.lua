@@ -8,6 +8,7 @@ require 'utils'
 
 local Spawn = {}
 Spawn.__index = Spawn
+Spawn.isSpawn = true
 
 function Spawn.new(node, collider)
   --temporary to make sure it's not being used
@@ -105,6 +106,9 @@ function Spawn:createNode()
   spawnedNode.state = self.initialState or 'default'
   level:addNode(spawnedNode)
   self.spawned = self.spawned + 1
+  if spawnedNode.props.enter then
+    spawnedNode.props.enter(spawnedNode)
+  end
   -- If the node has a spawn sound defined, then play it
   if spawnedNode.props and spawnedNode.props.spawn_sound then
     sound.playSfx( spawnedNode.props.spawn_sound )

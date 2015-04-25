@@ -19,6 +19,7 @@ local sound = require 'vendor/TEsound'
 local token = require 'nodes/token'
 local game = require 'game'
 local utils = require 'utils'
+local Dialog = require 'dialog'
 
 
 local Enemy = {}
@@ -129,15 +130,25 @@ function Enemy.new(node, collider, enemytype)
     collider:setGhost(enemy.attack_bb)
     enemy.last_attack = 0
   end
-  
+  enemy.enterScript = enemy.props.enterScript or false
+  enemy.deathScript = enemy.props.deathScript or false
+  enemy.rage = false
+
   enemy.foreground = node.properties.foreground or enemy.props.foreground or false
   
   return enemy
 end
 
-function Enemy:enter()
+function Enemy:enter( player )
   if self.props.enter then
-    self.props.enter(self)
+    self.props.enter(self, player)
+  end
+
+  if self.enterScript then
+    player.freeze = true
+    Dialog.new(self.enterScript, function()
+        player.freeze = false
+      end)
   end
 end
 
@@ -176,7 +187,8 @@ function Enemy:hurt( damage, special_damage, knockback )
       self.currently_held:die()
     end
     Timer.add(self.dyingdelay, function() 
-      self:die()
+      if self.props.die then self.props.die( self ) else self:die() end
+        
     end)
     if self.reviveTimer then Timer.cancel( self.reviveTimer ) end
     self:dropTokens()
@@ -234,7 +246,7 @@ function Enemy:cancel_flash()
 end
 
 function Enemy:die()
-  if self.props.die then self.props.die( self ) end
+  --if self.props.die then self.props.die( self ) end
   self.dead = true
   self.collider:remove(self.bb)
   self.collider:remove(self.attack_bb)
@@ -330,7 +342,7 @@ function Enemy:collide(node, dt, mtv_x, mtv_y)
     self.state = 'attack'
     Timer.add( 1,
       function() 
-        if self.state ~= 'dying' then self.state = 'default' end
+        if self.state ~= 'dying' and self.rage~= true then self.state = 'default' end
       end
     )
   end
@@ -419,7 +431,6 @@ function Enemy:draw()
   end
 
   love.graphics.setColor(r, g, b, a)
-
   if self.props.draw then
     self.props.draw(self)
   end
