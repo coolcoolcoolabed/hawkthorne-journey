@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="115" height="37" tilewidth="24" tileheight="24">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="115" height="37" tilewidth="24" tileheight="24" nextobjectid="127">
  <properties>
   <property name="blue" value="223"/>
   <property name="green" value="181"/>
@@ -36,7 +36,7 @@
  </layer>
  <layer name="floor" width="115" height="37">
   <data encoding="base64" compression="zlib">
-   eJztmklOwzAUhl2uQMuGBUi0iHkFrCMx7BHDvmI4RwQ3oNDcoL0GM1yHLWz4ozYlteLkJbGUV+d90iehykYmH3WTJkoVY6jU02BaD695BX+dNcbr8sZO1sdhbVyRlu4gLd1BWrqDtHQHaekO0tIdpKU7SEt+9FN8gHeGedKSH4MU72FPjboG2jxpyY+0lnGH2jxpyY+shthjfey1fl9TWvIjq+MtxF7rDzSlJT+KdJSWfMnbUVryJOr3qP6vRXoZHaUlT2LnqX7CXistZwy95fi1Uu/L+YZSTdiCC43sNSxhzDL8Joz9wZhfw7g6tzR91xM1M83LarmCY92GndgxX8PP63ADbsItuA13CP2o1Lmlvq+G3/XgvGfS0zSv6j12cS51XdJSJfZMJKvlgcX3Wh5catmELbhAHJ/UUu+ZRIDj05/WC2LH61RalqYNO3CVON7UktIzmh8y1PbjS2lZml24B/eJ49NaUnrGr2kKL9oiLrU8hEfwmDg+qyX1/cmlpbb3e5HBDLY8g+fwgjie0pLSk0tLl7iC1/CGOJ7aMquntLTDM3yBr/ANvsMP+EmYm6dl0vVK/Nyna+fPKUV3hv+n0jp+EebnbRn1jJ4diRs+R3JSsUHCffP+6H566ud91ZTtGFKkpUn9OZIqMNwjIJ2/VYWNjiF1acm1p62OIXVqya2nzY4hdWuZ9nnPQf3Z1TzUsSVnyxxDLuuwRZ1bCu7wB15uSH8=
+   eJztmklOwzAYRl2uQNsNC5BoEfMKWEdi2COGfcVwjghuQCG5QXsNZrgOW9jwRW1KasXJn8TIrvM/6UmoslHwo27SRIhyDIV4HEzr4TWv5K/Txvi4vLGT47Ph2GyFW7oDt3QHbukO3NIduKU7cEt34JbuwC3tI8jwHt4q5nFL+xhkeAf7YtQ1lOZxS/vIapl0KM3jlvaR1xB7rI+91g8kuaV95HW8gdhr/YEkt7SPMh25pb0U7cgt7STu9yD+rkX6OR25pZ0kzlP9lL2WW84Ycsvxa5Xel/MNIZqwBduN/GNYxJgl+EUY+40xP4pxdW6p+q4nbqaal9dyGWvdgd3Emq/i5zW4DjfgJtyC24R+VOrcUt5Xo+96cN4z6amaZ3qPXZjLPC5uKVJ7ppLXcl/je60ILrVswhZsE8entZR7phFifYJpvTCxXifcsjId2IUrxPGqlpSe8fyIobQfX3DLyuzAXbhHHJ/VktIzeU1T+qA14lLLA3gIj4jj81pS35+2tJT2fi82nMGWp/AMnhPHU1pSetrS0iUu4RW8Jo6ntszryS318ASf4Qt8hW/wHX4Q5hZpmXa9kjz36en5cyrRm+H/qayOn4T5RVvGPeNnR5JGz5EcGzZMuW8ejO6nZ37em6Zqx4gyLVXKz5GYQHGPgHT+ZgodHSPq0tLWnro6RtSppW09dXaMqFvL5Oe9SVTPJMvPrhahji1jTfIfa8gtzWDzGjLm+QVLdg4h
   </data>
  </layer>
  <layer name="features" width="115" height="37">
@@ -46,37 +46,38 @@
  </layer>
  <layer name="collision" width="115" height="37">
   <data encoding="base64" compression="zlib">
-   eJztmWsOgkAMBkk4iXgMz2G8/02MMUYFtrvsi68wk/RPCYV2CMtjGPK4jGm53oTOQeHcSmnVAy77g0s77wlc2nlP4NLOewKXdt4TuLTznsClnfcELu28J2I9vLbP4/4Tjw2zUZjXmV2mcBvfEaurMC9c1qmrMC9chplW7sGfqH2sGuByncnYF5f9ye3B8hiqqzAvXP4T8xiqqzAvXH6fVefPq1vqKswLl3XqKswLl3XqKszrzC7X3jWurJeS5PYQ84nL/pT0YPnEZX9Kewj5TP0W1Btc2qSsnyrgMo4Xn7hMw4PP0L0fl0s8+DwqLa5HfLYn9K+xBfhsR8q/jdpYa5NieLj+9vDoFWWfeNyOok885qPkE4/l7L1+H+W9FwDgDDwBoSImvw==
+   eJztmX0OgjAMR0k4iXgMz2G8/02MMUZF2o2xzV/hvaT/lFBoH2F8DEMZpzEv1xvrHBTObSutesBlf3Dp5yOBSz8fCVz6+Ujg0s9HApd+PhK49PORwKWfj0Sqh8f2eVw/4rZiNgrzOrLLHC7jM1J1FeaFyzp1FeaFS5tp4R78itrHqgEul5mcfXHZn9IePI9WXYV54fKblEerrsK8cPl+Vp0/r66pqzAvXNapqzAvXNapqzCvI7tcetc4s15KUtpDyicu+7OlB88nLvuztQfLZ+63oN7g0idn/VQBl2mi+MRlHhF8Wvd+XP4SwedeaXE94rM91r/GFuCzHTn/NmrjrU2KEeH6+4fHqCj7xON6FH3isRwln3gEAADoxx0y1CH3
   </data>
  </layer>
- <objectgroup name="nodes" width="115" height="37" visible="0">
-  <object type="liquid" x="0" y="840" width="480" height="48">
+ <objectgroup name="nodes">
+  <object id="1" type="liquid" x="0" y="840" width="480" height="48">
    <properties>
     <property name="sprite" value="images/liquid/lava.png"/>
    </properties>
   </object>
-  <object type="liquid" x="480" y="816" width="768" height="72">
+  <object id="2" type="liquid" x="480" y="816" width="768" height="72">
    <properties>
     <property name="sprite" value="images/liquid/lava.png"/>
    </properties>
   </object>
-  <object type="liquid" x="1248" y="864" width="1176" height="24">
+  <object id="3" type="liquid" x="1248" y="864" width="1176" height="24">
    <properties>
     <property name="sprite" value="images/liquid/lava.png"/>
    </properties>
   </object>
-  <object type="liquid" x="2424" y="840" width="336" height="48">
+  <object id="4" type="liquid" x="2424" y="840" width="336" height="48">
    <properties>
     <property name="sprite" value="images/liquid/lava.png"/>
    </properties>
   </object>
-  <object name="main" type="door" x="35" y="132" width="51" height="84">
+  <object id="5" name="main" type="door" x="1896" y="720" width="48" height="72">
    <properties>
+    <property name="key" value="greendale"/>
     <property name="level" value="castle-hawkthorne"/>
     <property name="to" value="next"/>
    </properties>
   </object>
-  <object type="sprite" x="288" y="192" width="24" height="24">
+  <object id="6" type="sprite" x="288" y="192" width="24" height="24">
    <properties>
     <property name="animation" value="1-3,1"/>
     <property name="height" value="24"/>
@@ -84,7 +85,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="0" y="360" width="24" height="24">
+  <object id="7" type="sprite" x="0" y="360" width="24" height="24">
    <properties>
     <property name="animation" value="1-3,1"/>
     <property name="height" value="24"/>
@@ -92,7 +93,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2376" y="600" width="24" height="24">
+  <object id="8" type="sprite" x="2376" y="600" width="24" height="24">
    <properties>
     <property name="animation" value="1-3,1"/>
     <property name="height" value="24"/>
@@ -100,7 +101,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2328" y="648" width="24" height="24">
+  <object id="9" type="sprite" x="2328" y="648" width="24" height="24">
    <properties>
     <property name="animation" value="1-3,1"/>
     <property name="height" value="24"/>
@@ -108,7 +109,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2280" y="696" width="24" height="24">
+  <object id="10" type="sprite" x="2280" y="696" width="24" height="24">
    <properties>
     <property name="animation" value="1-3,1"/>
     <property name="height" value="24"/>
@@ -116,13 +117,13 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object name="greendale" type="key" x="2496" y="624" width="24" height="24"/>
-  <object type="scenetrigger" x="2472" y="504" width="24" height="144">
+  <object id="11" name="greendale" type="key" x="2496" y="624" width="24" height="24"/>
+  <object id="12" type="scenetrigger" x="2472" y="504" width="24" height="144">
    <properties>
     <property name="cutscene" value="throne"/>
    </properties>
   </object>
-  <object type="sprite" x="2448" y="768" width="24" height="24">
+  <object id="13" type="sprite" x="2448" y="768" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -130,7 +131,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2496" y="720" width="24" height="24">
+  <object id="14" type="sprite" x="2496" y="720" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -138,7 +139,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2496" y="744" width="24" height="24">
+  <object id="15" type="sprite" x="2496" y="744" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -146,7 +147,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2496" y="768" width="24" height="24">
+  <object id="16" type="sprite" x="2496" y="768" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -154,7 +155,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2496" y="792" width="24" height="24">
+  <object id="17" type="sprite" x="2496" y="792" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -162,7 +163,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2496" y="816" width="24" height="24">
+  <object id="18" type="sprite" x="2496" y="816" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -170,7 +171,7 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2448" y="792" width="24" height="24">
+  <object id="19" type="sprite" x="2448" y="792" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
@@ -178,12 +179,604 @@
     <property name="width" value="24"/>
    </properties>
   </object>
-  <object type="sprite" x="2448" y="816" width="24" height="24">
+  <object id="20" type="sprite" x="2448" y="816" width="24" height="24">
    <properties>
     <property name="animation" value="1-2,1"/>
     <property name="height" value="24"/>
     <property name="sheet" value="images/sprites/castle/lavacolumn.png"/>
     <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object id="23" type="breakable_block" x="1512" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="24" type="breakable_block" x="1536" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="25" type="breakable_block" x="1560" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="26" type="breakable_block" x="1584" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="27" type="breakable_block" x="1608" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="28" type="breakable_block" x="1632" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="29" type="breakable_block" x="1656" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="30" type="breakable_block" x="1680" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="31" type="breakable_block" x="1800" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="32" type="breakable_block" x="1752" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="33" type="breakable_block" x="1776" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="34" type="breakable_block" x="1872" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="35" type="breakable_block" x="1848" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="36" type="breakable_block" x="1728" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="37" type="breakable_block" x="1824" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="38" type="breakable_block" x="1704" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="39" type="breakable_block" x="1992" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="40" type="breakable_block" x="1944" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="41" type="breakable_block" x="1968" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="42" type="breakable_block" x="2064" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="43" type="breakable_block" x="2040" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="44" type="breakable_block" x="1920" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="45" type="breakable_block" x="2016" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="46" type="breakable_block" x="1896" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="47" type="breakable_block" x="2184" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="48" type="breakable_block" x="2136" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="49" type="breakable_block" x="2160" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="50" type="breakable_block" x="2256" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="51" type="breakable_block" x="2232" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="52" type="breakable_block" x="2112" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="53" type="breakable_block" x="2208" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="54" type="breakable_block" x="2088" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="58" type="breakable_block" x="2328" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="59" type="breakable_block" x="2304" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="61" type="breakable_block" x="2280" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-top.png"/>
+   </properties>
+  </object>
+  <object id="63" type="breakable_block" x="1512" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="64" type="breakable_block" x="1584" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="65" type="breakable_block" x="1536" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="66" type="breakable_block" x="1560" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="67" type="breakable_block" x="1608" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="68" type="breakable_block" x="1632" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="69" type="breakable_block" x="1656" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="71" type="breakable_block" x="1680" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="72" type="breakable_block" x="1704" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="73" type="breakable_block" x="1728" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="74" type="breakable_block" x="1752" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="75" type="breakable_block" x="1776" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="76" type="breakable_block" x="1800" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="77" type="breakable_block" x="1992" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="78" type="breakable_block" x="2040" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="79" type="breakable_block" x="2064" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="80" type="breakable_block" x="1968" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="81" type="breakable_block" x="1824" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="82" type="breakable_block" x="2112" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="83" type="breakable_block" x="2016" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="84" type="breakable_block" x="1944" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="85" type="breakable_block" x="2088" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="86" type="breakable_block" x="1848" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="87" type="breakable_block" x="1920" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="88" type="breakable_block" x="1896" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="89" type="breakable_block" x="1872" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="90" type="breakable_block" x="2208" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="91" type="breakable_block" x="2232" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="92" type="breakable_block" x="2160" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="93" type="breakable_block" x="2136" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="94" type="breakable_block" x="2184" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="95" type="breakable_block" x="2064" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="96" type="breakable_block" x="2088" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="97" type="breakable_block" x="2016" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="98" type="breakable_block" x="1512" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="99" type="breakable_block" x="2232" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="100" type="breakable_block" x="1752" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="101" type="breakable_block" x="1824" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="102" type="breakable_block" x="1896" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="103" type="breakable_block" x="2208" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="104" type="breakable_block" x="1776" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="105" type="breakable_block" x="1536" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="106" type="breakable_block" x="1608" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="107" type="breakable_block" x="1584" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="108" type="breakable_block" x="2184" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="109" type="breakable_block" x="1968" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="110" type="breakable_block" x="1632" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="111" type="breakable_block" x="1560" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="112" type="breakable_block" x="1800" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="113" type="breakable_block" x="2160" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="114" type="breakable_block" x="1704" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="115" type="breakable_block" x="2040" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="116" type="breakable_block" x="1992" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="117" type="breakable_block" x="1656" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="118" type="breakable_block" x="1872" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="119" type="breakable_block" x="1728" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="120" type="breakable_block" x="2136" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="121" type="breakable_block" x="1920" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="122" type="breakable_block" x="1848" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="123" type="breakable_block" x="1944" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="124" type="breakable_block" x="1680" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="125" type="breakable_block" x="2112" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="5000"/>
+    <property name="sprite" value="castle-bottom.png"/>
+   </properties>
+  </object>
+  <object id="126" type="spawn" x="2184" y="624" width="72" height="72">
+   <properties>
+    <property name="enemytype" value="cornelius"/>
+    <property name="nodeType" value="enemy"/>
+    <property name="spawnMax" value="1"/>
+    <property name="spawnType" value="proximity"/>
+    <property name="x_Proximity" value="100"/>
+    <property name="y_Proximity" value="550"/>
    </properties>
   </object>
  </objectgroup>

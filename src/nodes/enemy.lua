@@ -19,7 +19,7 @@ local sound = require 'vendor/TEsound'
 local token = require 'nodes/token'
 local game = require 'game'
 local utils = require 'utils'
-local window = require 'window'
+local Dialog = require 'dialog'
 
 
 local Enemy = {}
@@ -59,6 +59,7 @@ function Enemy.new(node, collider, enemytype)
   enemy.idletime = 0
   
   assert( enemy.props.damage, "You must provide a 'damage' value for " .. type )
+  enemy.special_damage = enemy.props.special_damage or {}
 
   assert( enemy.props.hp, "You must provide a 'hp' ( hit point ) value for " .. type )
   assert( tonumber(enemy.props.hp),"Hp must be a number" )
@@ -101,7 +102,6 @@ function Enemy.new(node, collider, enemytype)
   enemy.chargeUpTime = enemy.props.chargeUpTime
   enemy.player_rebound = enemy.props.player_rebound or 300
   enemy.vulnerabilities = enemy.props.vulnerabilities or {}
-  enemy.attackingWorld = false
 
   enemy.animations = {}
   
@@ -131,15 +131,25 @@ function Enemy.new(node, collider, enemytype)
     collider:setGhost(enemy.attack_bb)
     enemy.last_attack = 0
   end
-  
+  enemy.enterScript = enemy.props.enterScript or false
+  enemy.deathScript = enemy.props.deathScript or false
+  enemy.rage = false
+
   enemy.foreground = node.properties.foreground or enemy.props.foreground or false
   
   return enemy
 end
 
-function Enemy:enter()
+function Enemy:enter( player )
   if self.props.enter then
-    self.props.enter(self)
+    self.props.enter(self, player)
+  end
+
+  if self.enterScript then
+    player.freeze = true
+    Dialog.new(self.enterScript, function()
+        player.freeze = false
+      end)
   end
 end
 
@@ -168,7 +178,7 @@ function Enemy:hurt( damage, special_damage, knockback )
     self:cancel_flash()
 
     if self.containerLevel and self.props.splat then
-      table.insert(self.containerLevel.nodes, 5, self.props.splat(self))
+      table.insert(self.containerLevel.nodes, 1, self.props.splat(self))
     end
 
     self.collider:setGhost(self.bb)
@@ -178,7 +188,8 @@ function Enemy:hurt( damage, special_damage, knockback )
       self.currently_held:die()
     end
     Timer.add(self.dyingdelay, function() 
-      self:die()
+      if self.props.die then self.props.die( self ) else self:die() end
+        
     end)
     if self.reviveTimer then Timer.cancel( self.reviveTimer ) end
     self:dropTokens()
@@ -199,6 +210,10 @@ end
 
 -- Compares vulnerabilities to a weapons special damage and sums up total damage
 function Enemy:calculateDamage(damage, special_damage)
+  if self.props.calculateDamage then
+    self.props.calculateDamage(self, damage, special_damage)
+  end
+  
   if not special_damage then
     return damage
   end
@@ -236,7 +251,7 @@ function Enemy:cancel_flash()
 end
 
 function Enemy:die()
-  if self.props.die then self.props.die( self ) end
+  --if self.props.die then self.props.die( self ) end
   self.dead = true
   self.collider:remove(self.bb)
   self.collider:remove(self.attack_bb)
@@ -275,45 +290,14 @@ function Enemy:dropTokens()
 end
 
 function Enemy:collide(node, dt, mtv_x, mtv_y)
-  function attack()
-    -- attack
-    if self.props.attack_sound then
-      if not self.attackingWorld then
-        if type(self.props.attack_sound) == 'table' then
-          sound.playSfx( self.props.attack_sound[math.random(#self.props.attack_sound)] )
-        else
-          sound.playSfx( self.props.attack_sound )
-        end
-      end
-    end
-
-    if self.props.attack then
-      self.props.attack(self,self.props.attackDelay)
-    elseif self.animations['attack'] then
-      self.state = 'attack'
-      Timer.add(1, function()
-        if self.state ~= 'dying' then self.state = 'default' end
-      end)
-    end
-  end
-
   if node.isWall then
-    attack()
-
-    if self.props.damage ~= 0 then
-      if self.attackingWorld then return end
-      self.attackingWorld = true
-      node:hurt(self.props.damage)
-      Timer.add(1.25, function()
-        self.attackingWorld = false
-      end)
-    end
-  end
-
+    print('hitting the wall')
+  return end
   if not node.isPlayer or 
-     self.props.peaceful or
-     self.dead or
-     node.dead then return end
+  self.props.peaceful or 
+  self.dead or 
+  node.dead
+  then return end
 
   local player = node
   if player.rebounding or player.dead then
@@ -352,14 +336,36 @@ function Enemy:collide(node, dt, mtv_x, mtv_y)
   end
 
   -- attack
-  attack()
+  if self.props.attack_sound then
+    if type(self.props.attack_sound) == 'table' then
+      sound.playSfx( self.props.attack_sound[math.random(#self.props.attack_sound)] )
+    else
+      sound.playSfx( self.props.attack_sound )
+    end
+  end
+
+  if self.props.attack then
+    self.props.attack(self,self.props.attackDelay)
+  elseif self.animations['attack'] then
+    self.state = 'attack'
+    Timer.add( 1,
+      function() 
+        if self.state ~= 'dying' and self.rage~= true then self.state = 'default' end
+      end
+    )
+  end
 
   if self.props.damage ~= 0 then
-    player:hurt(self.props.damage)
-    player.top_bb:move(mtv_x, mtv_y)
-    player.bottom_bb:move(mtv_x, mtv_y)
-    player.velocity.y = -450
-    player.velocity.x = self.player_rebound * ( player.position.x < self.position.x + ( self.props.width / 2 ) + self.bb_offset.x and -1 or 1 )
+    if node.isPlayer then
+      player:hurt(self.props.damage)
+      player.top_bb:move(mtv_x, mtv_y)
+      player.bottom_bb:move(mtv_x, mtv_y)
+      player.velocity.y = -450
+      player.velocity.x = self.player_rebound * ( player.position.x < self.position.x + ( self.props.width / 2 ) + self.bb_offset.x and -1 or 1 )
+    elseif node.isWall then
+      node:hurt(self.props.damage)
+      print('enemy hurts wall')
+    end
   end
 end
 
@@ -371,7 +377,7 @@ end
 
 function Enemy:update( dt, player, map )
   local level = gamestate.currentState()
-  if level.scene or player.inventory.visible then return end
+  if level.scene then return end
   
   if(self.position.x < self.minimum_x or self.position.x > self.maximum_x or
      self.position.y < self.minimum_y or self.position.y > self.maximum_y) then
@@ -392,17 +398,6 @@ function Enemy:update( dt, player, map )
       self.props.dyingupdate( dt, self )
     end
     return
-  end
-
-  -- passive sound
-  if self.props.passive_sound then
-    if (math.random() <= (self.props.passive_sound_chance or .05) * dt) and (self.state == 'default') and self:onScreen() then
-      if type(self.props.passive_sound) == 'table' then
-        sound.playSfx( self.props.passive_sound[math.random(#self.props.passive_sound)] )
-      else
-        sound.playSfx( self.props.passive_sound )
-      end
-    end
   end
   
   if self.props.update then
@@ -449,7 +444,6 @@ function Enemy:draw()
   end
 
   love.graphics.setColor(r, g, b, a)
-
   if self.props.draw then
     self.props.draw(self)
   end
@@ -475,7 +469,6 @@ function Enemy:wall_pushback()
   if self.props.wall_pushback then
     self.props.wall_pushback(self)
   else
-    if self.attackingWorld then return end
     self.direction = self.direction == 'left' and 'right' or 'left'
     self.velocity.x = 0
     self:moveBoundingBox()
@@ -539,18 +532,6 @@ function Enemy:throw()
       object_thrown:throw(self)
     end
   end
-end
-
-function Enemy:onScreen()
-  x_min, y_min = self.containerLevel:cameraPosition()
-  x_max = x_min + window.width
-  y_max = y_min + window.height
-  if self.position.x >= x_min and self.position.x <= x_max then
-    if self.position.y >= y_min and self.position.y <= y_max then
-      return true
-    end
-  end
-  return false
 end
 
 return Enemy

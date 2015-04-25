@@ -20,6 +20,11 @@ function Wall.new(node, collider, level)
   wall.dyingdelay = node.properties.dyingdelay or 0
   wall.dead = false
   wall.sound = node.properties.sound
+  wall.brokenBy = node.properties.brokenBy
+	wall.warning = node.properties.warning or false
+	if wall.warning then
+	    wall.message = node.properties.message or 'This is to hard for that weapon to break!'
+	end
   wall.position = {x = node.x, y = node.y}
   wall.width = node.width
   wall.height = node.height
@@ -77,7 +82,7 @@ function Wall:update(dt, player)
 end
 
 function Wall:hurt( damage )
-  self.hp = self.hp - damage
+  self.hp = self.hp - self:calculateDamage(damage, special_damage)
   self.destroyAnimation:update(damage)
   self:draw()
   if self.hp <= 0 then
@@ -85,6 +90,42 @@ function Wall:hurt( damage )
     if self.sound then sound.playSfx(self.sound) end
     Timer.add(self.dyingdelay, function() self:die() end)
   end
+end
+
+-- Compares brokenBy to a weapons special damage and sums up total damage
+function Wall:calculateDamage(damage, special_damage, player)
+    if not self:specialDamageCheck(special_damage) then 
+            sound.playSfx( "dbl_beep" )
+        	--player.freeze = true
+            if self.warning==true then
+                Dialog.new(''..self.message..'', function()
+                --player.freeze = false
+                end)
+            end
+        return 0 
+
+    end
+    --[[if self:specialDamageCheck(special_damage) == true then
+        damage = damage + special_damage[value]
+    else 
+        damage = 0
+    end
+
+end--]]
+
+    return damage
+end
+
+function Wall:specialDamageCheck( special_damage )
+    if not self.brokenBy or self.brokenBy == {} then 
+        return true 
+    end
+
+    if special_damage and special_damage[self.brokenBy] ~= nil then
+        return true
+    end
+
+    return false
 end
 
 function Wall:die()
