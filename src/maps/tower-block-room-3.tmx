@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="21" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="blue" value="250"/>
+  <property name="green" value="222"/>
+  <property name="offset" value="36"/>
+  <property name="overworldName" value="forest_3"/>
+  <property name="red" value="115"/>
+  <property name="soundtrack" value="abeds-town"/>
+ </properties>
+ <tileset firstgid="1" name="forest" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/forest.png" width="216" height="504"/>
+ </tileset>
+ <tileset firstgid="190" name="collisions" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/collisions.png" width="632" height="512"/>
+ </tileset>
+ <layer name="background" width="25" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFRkBsTCFNCIzaMfztUEPDmhRiVSxmjtox+O3IoQATY4csCRiXPkJ2jOJRPIoRGABO/VBQ
+  </data>
+ </layer>
+ <layer name="foreground" width="25" height="21">
+  <data encoding="base64" compression="zlib">
+   eJwzYmBgMAZiIyhNDYBsnhEae9SOkWEHOlAHYksKMSGgTpEPiAOE7HCHYmQQC8SJQJxEZTs0kcTSgNgPiLOpZAc2QI4dahRgVSLsoMR8GB4Fo2AUEA8AP3cXew==
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="25" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4D6wBILpraZgxHgclsYvR0ySMAaCjClQA2KiRUfBaNgFBAGAKemDXY=
+  </data>
+ </layer>
+ <layer name="collision" width="25" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4CB4TKFmBDYR6H7iNE/asfItINSPApGwSggHgAAuYkitw==
+  </data>
+ </layer>
+ <objectgroup color="#9ca478" name="floorspace" width="25" height="21">
+  <object x="120" y="264" width="360" height="24">
+   <properties>
+    <property name="primary" value="true"/>
+   </properties>
+  </object>
+  <object x="150" y="279">
+   <properties>
+    <property name="height" value="24"/>
+   </properties>
+   <polygon points="0,0 -1,-24 77,-23 99,-1"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#000000" name="nodes" width="25" height="21">
+  <object name="main" type="door" x="432" y="216" width="24" height="48">
+   <properties>
+    <property name="level" value="tower-block"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="tower-block-room-3"/>
+   </properties>
+  </object>
+  <object name="flowers" type="material" x="269" y="255" width="24" height="24"/>
+  <object type="sprite" x="144" y="240" width="120" height="48">
+   <properties>
+    <property name="depth" value="18"/>
+    <property name="flip" value="true"/>
+    <property name="height" value="47"/>
+    <property name="sheet" value="images/sprites/town/bed.png"/>
+    <property name="width" value="95"/>
+   </properties>
+  </object>
+  <object type="sprite" x="120" y="216" width="24" height="48">
+   <properties>
+    <property name="flip" value="true"/>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/town/bed_headboard.png"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object name="princess" type="npc" x="313" y="228" width="48" height="48"/>
+  <object name="frog" type="material" x="392" y="250" width="24" height="24"/>
+ </objectgroup>
+</map>

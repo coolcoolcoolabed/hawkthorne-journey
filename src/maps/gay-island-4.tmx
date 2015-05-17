@@ -16,7 +16,7 @@
    <property name="parallax" value="0.1"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztw1ENABAAQEE2OeSQQw45pJDDtwhySCGBAt677XoMq9ufbLAVtsBm2AR7AuuGnbDDtm3bth8vdqJHsg==
+   eJztzyEVACEABNG998hBDnKQA0cHUlyO00QgBylwuDMYxI74fqY96g1blXS7gd9zxUw2k8xEM8HMlJdh5jPzAgAAAMCPBb5XRgo=
   </data>
  </layer>
  <layer name="clouds2" width="60" height="24">
@@ -68,7 +68,7 @@
  </layer>
  <layer name="filler" width="60" height="24">
   <data encoding="base64" compression="zlib">
-   eJzt0zEKgDAMheHSHMFJj+Taa3k+XT2KgjiK6ZKY+H/whkKGl0JKAQBE0V7eAL7p6Vaz3vCf9m0dmcSpJEwMciWLex9torDoP4ru3rVzQCZL9W5gaz+z1r5sgf9o9i5gjH31Dl7eFRA=
+   eJxjYBgFyICPeaBdQF+gMcL8OwpGwVAHwQT4o2AUjILBCXDl1eGah0eSf4NJwFKj7a5hDYSZIXi4AJh/iMVDBdDD/ZLMxOV3YtWNglEwnEAP00C7gL7gARBfYyINX6dzGFFzHMyLekYNCTDqX+IBAGX4FV0=
   </data>
  </layer>
  <layer name="floor" width="60" height="24">
@@ -78,7 +78,7 @@
  </layer>
  <layer name="trees" width="60" height="24">
   <data encoding="base64" compression="zlib">
-   eJztlmkKwjAQhWNzCZcbeRQP4O8cqi5ncKnLGVxuob4QAqFMwoCNre188Ah9aem8yVCqlCAMk12h1B46QMei7Wryc0PGO/SAngPI+0LGt82plRrptqvJzxgZJ9AUmgV5+zLnS6J2nzckNedUL7heF6Dypuac6gXX+wUl3rWC1tDGrQbXBr6x+1Te2JxbqF5wvRzU66vwzhN0hi5uNbg2VSJvyqd6wfVyUAazM9fuXFPyNdmz3wbPxvLG9rhe0xDnyZK99/qHeZuiT3kXjBr6lPdbfI6wb2E2fDdM3ROEGNR/oSAIgtBtPkv+WeA=
+   eJztllsOgjAQRQfYhI/dqF+uwbgAf02In10UomvwrWvwsQv1NkjSkGnTRBAsPclNwwBhztAQiPQMAqIhMgoMFznEBJ5zrNOW+MYf30VLfItsQqItskP2Yd3dVM8Vjjfkjjxa4PuE40t6RkRBVHc31dOBYxfpIX3F15V9HjO9574qpn3OzcK21gQ4X9M+52ZhW/sFCZ61RFJkla0CxwJ1Ic9zvrp9LuFmYVurgmJ/BzzziJyQc7YKHIuDwddU52ZhW6uCpLB30tCcvCf57tfKvTpf3TnbWtkw79Mq8trLH/qWhUu+M4seXPL9ltxDnZvqNo7M30KPR4X7L/R4PB5Ps3kDSppc8Q==
   </data>
  </layer>
  <layer name="collision" width="60" height="24">
@@ -109,6 +109,28 @@
    <properties>
     <property name="sound" value="false"/>
     <property name="to" value="false"/>
+   </properties>
+  </object>
+  <object type="hiddendoortrigger" x="72" y="264" width="24" height="24">
+   <properties>
+    <property name="height" value="24"/>
+    <property name="message" value="Turn Seashell?"/>
+    <property name="sprite" value="seashell"/>
+    <property name="target" value="hiddenleaves"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object name="hiddenleaves" type="door" x="168" y="-24" width="96" height="96">
+   <properties>
+    <property name="hideable" value="true"/>
+    <property name="level" value="gay-island-5"/>
+    <property name="offset_hidden_x" value="-24"/>
+    <property name="offset_shown_x" value="-94"/>
+    <property name="sprite" value="hiddenleaves"/>
+    <property name="sprite_height" value="96"/>
+    <property name="sprite_width" value="96"/>
+    <property name="to" value="main"/>
+    <property name="trigger" value="doortriggers.seashell"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="70" height="50" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="blue" value="250"/>
+  <property name="green" value="222"/>
+  <property name="offset" value="36"/>
+  <property name="overworldName" value="forest_3"/>
+  <property name="red" value="115"/>
+  <property name="soundtrack" value="mash-theme"/>
+ </properties>
+ <tileset firstgid="1" name="forest" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/forest.png" width="216" height="504"/>
+ </tileset>
+ <tileset firstgid="190" name="collisions" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/collisions.png" width="632" height="512"/>
+ </tileset>
+ <layer name="background" width="70" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztl0tuwzAMRHWQNsimSXsS73z/47SLGFAZkhp9YooRBxgYsWRC88BY1i2ldHPiXLvweyemouOSrbOizjPSzKWM35lRLp7MMUG5oHPD4XA4zPsQvddSp+f5WUw1MhPH2oslLhIbbb40xyMbad0aq/x+aY43Lom5SkK4JGEOV2NGc2ss6Tg30P6okXVuhAtda0n5mQp9hso69yh/peezZo+s87ySSw8j6zzBxZZLLRvrPMHFnkvOpsTJOs/ZXND+sc4z0sEluASXfiZXJnuJlxUX7n3Yk10b+3mYzpuVy5atYzuBCzc2I5dX98tRF+WCyCsXrib3H1qJi1QH4bK/KRethjcuI9+7GtcSlxp57RduL16Ri7TP5mNeuHw8uHwS3/98AVlovVK7H83CRTv73wEmSG9x7FbngnBr1axcSrnRfjqTy9WYS837+0wuxzlkS/r3yGgu6J42Qj1cpHPaSC4t+/sKXFrWN4pLKx+6jpZas2onV2S+lIurQbl5YjNKGpdVGKAKHqFQKPRfv6MhxwY=
+  </data>
+ </layer>
+ <layer name="foreground" width="70" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmktOwzAQhnMQimABCDgCtGXBY0WBJZyiW1jCxYlFjEajmbHHGTtu4l/61cpN7MnH+BXTdXXrPIPfij5BHpXkctR7Nfh9gf5guJwBdk63vW/QNa5s3XtD3E+Vb0A97nMPrtui+9bDNb6ObcfLX/eF4uqGNmCcMKY9UUdImEsOfRrX96Ns41tZP+xDK+W9GmnjConiIrWhbR/mSs58mTOX+94PAT8axeVEPbsTzvESlvQc+H3X+4X5zYqLY5Jjrg5Z0hguKcJcpmJSGxcs3Odr4gLHGDyWLJkLzBnMoHH5U2ku/fhyt0qwBRdp/rXiAufZYx2af8H1v9OGKR/aG82Hk3tejsvr8BnLxfWHp8EXEddbaQwfTnPg4vfCKeMUJ2suvr2SXKj2U7jErPtT9gRTc0npT1ChdVxIXO5MzYWKYywXn0NcLkDVzgXP+2O4+LKYcSQ3l9C+OmYNAOd1KX+gOC543OFyx3HZEeVWXEL9QFv3WC64nMsLigv1N05d2x06F8iGaluKX+orMVxOCJ8ybU3JxQu2J3GRYo3hckn4KqEtqJxcoObARbvWo8bka/R9ai6+r1rM07GKmc+n5hKzvoNaApfYd8ZQc+eieY8ONXculvsjCy61jLu1ccFqXPTnnLm4aM/ooErliyT47Jbn0tp3dlCQgRSTtO+z5GJxfhSzhtNwkWKSxofauKTWgc+LqPiWyMWfX/j3/1R8h8YFjgGpPOfIxSLPGhfapf8/q4THMmlubm5ubm6u278FKlyg
+  </data>
+ </layer>
+ <layer name="building" width="70" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2TEKwzAMBdAcJV2TpWvo0CulYzq2F+/iQIcIDCW2Cu/BByOMERq8aBiAf7QG9UdQv1e8eau4U/NOT1tQfzbtIp9XUH837SIfczkWzQUAIJOlBGrMJQAAtHct+dUSnAE4h38XANoav3Lp2UhC+05o6t1IMvvuw1yOmQsAQH8flioI7Q==
+  </data>
+ </layer>
+ <layer name="fade" width="70" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0lsKglAARVHnP5cyLbLn3DrClSI0P/qxXAs2KKjI0aqCp/tMa3WYacn69+u/3T7dUpuuqUmXtEvnVKdT2qYubdKxHNflmqbc25bnDc+casm+2aV7OR/b5lP/vMvwv0xtM9Vadxm2GetXdgEAAAAAAAAAAAAAgHcPSz1jYg==
+  </data>
+ </layer>
+ <layer name="collision" width="70" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmFsOhDAIRd3/olxHP2cNrmDm01hwRKhc6j0JiT/W5gj0sSzvY82eACial7aL9aVBiId2CEKiOOaWFqNhX+6pMMenoRMZZC+Z6xeyl0zoRSZzPdl2MapmMtd10kM/5yB7yTyPeb1sQlw9CyCfQ1lP50R6Qc8FCxXPh1eIrmOvlyp9xEpmviD350p15K0Ry7uVvDwJvch4vFj3dVLONuU5i9nW6Sjoo4d50kMnMmhOUPoumhcUULwg3dXM1Fvu7J20iHKC9K89jNrDRfjwjOH9/l0f/76pzcsy34peZiT7rhK11zBHZCK8/Mb4TBRT7VMIIYQQIvMF49VeMg==
+  </data>
+ </layer>
+ <objectgroup color="#000000" name="nodes" width="70" height="50">
+  <object name="main" type="door" x="0" y="936" width="48" height="72">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="next"/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="912" y="984" width="24" height="24"/>
+  <object name="rock" type="material" x="1056" y="984" width="24" height="24"/>
+  <object name="rock" type="material" x="1224" y="984" width="24" height="24"/>
+  <object name="rock" type="material" x="1416" y="696" width="24" height="24"/>
+  <object name="rock" type="material" x="1103" y="984" width="24" height="24"/>
+  <object name="rock" type="material" x="383" y="984" width="24" height="24"/>
+  <object name="rock" type="material" x="792" y="984" width="24" height="24"/>
+  <object type="info" x="96" y="960" width="24" height="48">
+   <properties>
+    <property name="info" value="The Eatery is where you can get some food.| towerblock is where we all live.| mine well it's a mine."/>
+   </properties>
+  </object>
+  <object type="sprite" x="96" y="960" width="24" height="48">
+   <properties>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/hermittown/guide.png"/>
+    <property name="width" value="41"/>
+   </properties>
+  </object>
+  <object type="sprite" x="504" y="960" width="53" height="53">
+   <properties>
+    <property name="animation" value="1-2,1"/>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/hermittown/deadbody.png"/>
+    <property name="width" value="48"/>
+   </properties>
+  </object>
+  <object type="sprite" x="192" y="888" width="96" height="144">
+   <properties>
+    <property name="height" value="120"/>
+    <property name="sheet" value="images/sprites/hermittown/eatery.png"/>
+    <property name="width" value="98"/>
+   </properties>
+  </object>
+  <object type="sprite" x="600" y="888" width="96" height="144">
+   <properties>
+    <property name="height" value="120"/>
+    <property name="sheet" value="images/sprites/hermittown/towerblock.png"/>
+    <property name="width" value="98"/>
+   </properties>
+  </object>
+  <object type="sprite" x="960" y="888" width="96" height="144">
+   <properties>
+    <property name="height" value="120"/>
+    <property name="sheet" value="images/sprites/hermittown/mine.png"/>
+    <property name="width" value="98"/>
+   </properties>
+  </object>
+  <object type="sprite" x="360" y="936" width="48" height="24">
+   <properties>
+    <property name="height" value="24"/>
+    <property name="sheet" value="images/sprites/hermittown/jail.png"/>
+    <property name="width" value="48"/>
+   </properties>
+  </object>
+  <object name="hermitperson" type="npc" x="792" y="960" width="48" height="48"/>
+  <object name="sleepingman" type="npc" x="696" y="960" width="48" height="48"/>
+  <object type="sprite" x="192" y="888" width="96" height="144">
+   <properties>
+    <property name="height" value="120"/>
+    <property name="sheet" value="images/sprites/hermittown/eatery.png"/>
+    <property name="width" value="98"/>
+   </properties>
+  </object>
+  <object name="tower-block" type="door" x="624" y="936" width="48" height="72">
+   <properties>
+    <property name="level" value="tower-block"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+  <object type="info" x="360" y="936" width="48" height="24">
+   <properties>
+    <property name="info" value="Psst.|Psssst|PSSST!!| Hey!|Let me out of here|"/>
+   </properties>
+  </object>
+  <object name="eatery" type="door" x="216" y="936" width="48" height="72">
+   <properties>
+    <property name="level" value="eatery"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="288" y="504" width="24" height="24"/>
+  <object name="rock" type="material" x="336" y="624" width="24" height="24"/>
+  <object name="rock" type="material" x="192" y="456" width="24" height="24"/>
+  <object name="rock" type="material" x="0" y="888" width="24" height="24"/>
+  <object type="sprite" x="624" y="372" width="48" height="144">
+   <properties>
+    <property name="height" value="120"/>
+    <property name="sheet" value="images/sprites/hermittown/princess.png"/>
+    <property name="width" value="49"/>
+   </properties>
+  </object>
+  <object type="climbable" x="628" y="385" width="5" height="113">
+   <properties>
+    <property name="blockTop" value="true"/>
+   </properties>
+  </object>
+  <object type="climbable" x="537" y="74" width="9" height="145">
+   <properties>
+    <property name="blockTop" value="true"/>
+   </properties>
+  </object>
+  <object type="climbable" x="705" y="72" width="8" height="123">
+   <properties>
+    <property name="blockTop" value="true"/>
+   </properties>
+  </object>
+  <object type="climbable" x="843" y="70" width="8" height="171">
+   <properties>
+    <property name="blockTop" value="true"/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="1296" y="552" width="24" height="24"/>
+  <object name="rock" type="material" x="1200" y="480" width="24" height="24"/>
+  <object name="rock" type="material" x="1176" y="816" width="24" height="24"/>
+  <object name="rock" type="material" x="1080" y="480" width="24" height="24"/>
+  <object name="rock" type="material" x="1008" y="552" width="24" height="24"/>
+  <object name="rock" type="material" x="48" y="312" width="24" height="24"/>
+  <object name="rock" type="material" x="312" y="144" width="24" height="24"/>
+  <object name="rock" type="material" x="1008" y="144" width="24" height="24"/>
+  <object name="rock" type="material" x="1248" y="144" width="24" height="24"/>
+  <object name="rock" type="material" x="1152" y="144" width="24" height="24"/>
+  <object name="rock" type="material" x="1488" y="144" width="24" height="24"/>
+  <object name="1princess" type="npc" x="624" y="360" width="48" height="72"/>
+ </objectgroup>
+</map>
