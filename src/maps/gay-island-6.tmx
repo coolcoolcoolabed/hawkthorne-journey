@@ -1,0 +1,3980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="190" height="40" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="offset" value="26"/>
+  <property name="overworldName" value="island_3"/>
+  <property name="soundtrack" value="mamma-mia"/>
+  <property name="title" value="Gay Island 2"/>
+ </properties>
+ <tileset firstgid="1" name="gay-island" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/gay-island.png" width="624" height="936"/>
+ </tileset>
+ <tileset firstgid="1015" name="collisions" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/collisions.png" width="632" height="512"/>
+ </tileset>
+ <layer name="sky" width="190" height="40">
+  <properties>
+   <property name="parallax" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwzEJAAAMA7Cyq/4V18dIIL2kqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq+O4pPKPA=
+  </data>
+ </layer>
+ <layer name="bushes" width="190" height="40">
+  <properties>
+   <property name="parallax" value="0.7"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt28sNgkAUBdChE0uxNEuxDeugDnoQoyRkokS+8+Gc5C3Ysbgz3CEQAgAAAAAAAAAAAAAAAAAAANSla8K9fc/lNf31JfU9wV6GvD+aEOKxBqhV+yXvU2vAOqAG/+Y+WgO31PcNa8g9ZxCfX+dmfhhdh5L0Wb8uzbpzL6XaMvd6D6WQe87k0+sX93mdhxLtsc8785K7I3Ov95BKN3pXuWe/kXtycuT+LvfkQu6pRdxdpiZV5kfZ9x0bm0i5h68d2WepknM/PAPknzm6H/+GlDa6f76ekI+S3A==
+  </data>
+ </layer>
+ <layer name="bg_leaves3" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1rEJgDAQQNHTLdK5gws4qqO4mRpQsNDCQoTce3BFuhT/QiIAAAAAAAAAAADg3tjHVPqY9xnq7Ofl7zvBV2rvaxdxN8cezHaA1pSj++rs/XTdAe3Tiutb/0T7tKa87L7onoR0T0a6JyN/fDLyxycj3ZOR7slI9wAAAAAAAAAAAAAA8N4GC4Iqgw==
+  </data>
+ </layer>
+ <layer name="bg_leaves2" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1s0JgzAYgOE4SMEtvHaFbuQoPTtFJ3GPemqKCKWoNRSJP88DH4oRyeFVDAEAAAAAAAAAIN0zThen6Y91l3k/sLZ352Pdx/O6ybs1WI3u2YtbEe5VP+Uw8VqZ+pymb/xn994Bcot9Xy9FCGMT1x4pzxrr/nNN92xFNdN99Uf3Y2u6Z0umuk/95g/dT63pnqOa6vm7dd1zJHPdL7kP9mhpz7rnbPzfc0a654x0zxm1sfs29yYAAAAAAAAAAAAAAGCHXhvVT/0=
+  </data>
+ </layer>
+ <layer name="bg_leaves" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt10FqwkAUh/GXm3iUHsUzmAt4lC6LN3D3oEuX7qWLZukdzDAJxDSBdvLy7GS+H/wxKMEIn0FFAAAAAAAAAAAAAAApLpW8fVciYe2xTj0/eP34uisF7Fyeu9aTxLabUfNhDd1jI+a6D5r43FcYzWNLRt0fh90DW9Xd0/eneEz3+CE08RkfXdwreb/G7drj3Zrv5fWZkB+v7vvez+29eLjQfz/r7wHdY45H9/eJ3udm2T/dY4737xzgP6B7lOjWdX979YVg09RwQA7UeEAu1HBALtRwgKdDtxRqOMDTQdLbV8MBnvrm64Rz1XCAp755ukdJaqF7lIfuUSK6R4noHiWie5SI7lGieuHUeICHnJv/SDgHCP7a+vgcNVoKuscSUz173/NT0D2W+O1/2jX7B3KkC4d1PABEzJ0x
+  </data>
+ </layer>
+ <layer name="filler" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmgGOozAMRX2t1Z5i1JvsXtDSHKHXGO6wG2mscS3HcUIMDfhJXwQwDi1PDNMWIEnW5et/toEkycqk98kdSe+TO5LeJ3ckvU/uiOb9s5GvU840SebRc79HliRZmfQ+uSPpfSLBGyT/r00keIOk94kEb5D0/rqgM6PHrZz0/rpgI/S5dO9xV0h6f13QSO1aWsdcKeQ9wuv7kN4fD54Q7VqecR5Hh7wn8n5/HtiIt45q5WfPWrRr+XTOsXKk9wDp/VlgI946qvV4z2uh87gjIpnZW/OYXjuN0/tYcHIKNX81VvJeLmf0lXOUpPfxoCO9ta0+nFW814jqmd7Hg2BfE6yMrdqe5/Ta+ZwdD1E90/t4ENreIxu3ehU2to5g38dr850dDxF9S016Hw9CvPeyh9xWm/PMeIjoW2pW9/6dz/fX9xLB57O3rpDep/fvyuN7ieD3vgXVpPf7+qb3cTzYGMG+Jq39vK5Q816L1t9zXHQ8zO5HrOa99j3cbB7tkq4+CPa1ae2XtYUe77GzNjo9RPVd3fsIHkpG+xQQ7Otj7avV9npf8tlZvzfaecvtLUbn02j9ZuediT6/B1vucZ73QrCvj7WvVruC9/z18HEPI3PVWM37D/Dfg/d6yr2X20b6EQg/1wYr2z1Q/WrejzIyl+e3Zyt4z93bwPZ/77N5lPcFFEsay3ULqh/5vcHVvefzbWy5iW18+zt7X7C8n/FMIufh6xH3e20M0HaF6tN7n/d8vKL3hOX9DI7wHti4tr0G1af3r1if893Ne7ntt6O/7BXxnENjHrm9Bu0b8f4vS++xI5kB72X17/We1lfxvuB9zpHrf4zI3rUevedpgWJJY4Q6/JjerOg9x5rj6vf7guW95azHe95f69F7nh5QjFGteq3dxDbrGKr5hGOfdWZjzdPyXnM7vdf7az16z9MDsmUtAPZ19sxxV+9pvZVZz7NRHOW97MefE7zn6QHBdkXbfyfvPfN4vZfrV/HeOp8e7/k8ozwr4fD/T2s1tB/Yvj1/lxFee2JQZtKax/N+tP4GrOz9rPs9n2eU0e8NrWtY+2xiDxiU2Vhz9L4f2nv+D7Y3WG0=
+  </data>
+ </layer>
+ <layer name="floor" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztnVtu1DAUhk8pIC5L4FpYBOogsQc0wyooT2wgC2AdVcUqLCGxACjvXQDtGnAgnjmc+h7n6v+Tfk0UexJn8o3HcaKWCIC6+D11AwCYAHgPagTegxqB96BG4D1YEz90fkYEgDUR24+jvwdrAt6DGoH39XFJ1IhxbHM5cZvGBt7Xx432/Fq/sjQ3E7dpbOB9fUzpvRppPyHg/Trg83KhMQu8h/droT0/xmPpsJyrhvfwfi34vOdlXfksvfeVTQW8L0c3n9KExiS8n/6l8+7IHXg/DPC+HJ13jc1Rjs9lV12y1I31PubaoC8qokxlZCjgfTnG8t4yT7+frzdz9tz7mP30RXnWK7GcEh8bfXynLLY6p102Yj28L8dY3lv69b3n3HU+zlmi9yF2+vi2LDb3t112Yj28L8eQ3pu6ipbpfU5CSO+38H4Shva+DR/PpMZsc4ixvvKsz02ItXn/hg7jMlvkWG0uDOh9Q3Toz3PD2lkcFVGemhA7j++cpXj/ng7fU1vkMbR8uTNa85zAe3dZTkLsIpxvWYP3rt+Ct4n7+ODYDo8hVM8E3vvLUxOiJu9dZbbfgNx9mBhC9Uxq914FylLjg98jjA2/roH3Ye8poi68t/uqesQH/6xjw4977t6HrnFzr3fhfVkU3fZV9YyPtXsf42dOny+3+1HnTOcTLcP70PFddK/funxlZUN7Xyo+4H0/7+XvyYbgfS7nul2Kyrh+HtiX9N7290PY8xqL8P6BzkOdRzqP6X8XS3svv1c7gve5TOm9vL9nPts5ey89f6Xzmuwuwnt437JE722eh3yG93V7z55Blc+cztb7UH8e63Oq9657uO16eD8MqmcM0nv2LN7f45dOT+39sc5dnXs693VOKN1zn8++evIa1XUPV96r5dcPa/P+c5ehvTftTJlf8WTvNmvzLL0/0mm712c6z3Ve6LykfNdzvLf13TZ8fbzL+xgU2fsuSYr3uUzofbEM7X3qsy0G3m8+0XlKZTwPjV9q8l5uMzbfWcYY5yzRe+7HlWOZLOtT5tZLem+A9+5cscB7eG9rd4z3Z8eHuFB023vb/RR4vxzvbctr9z42rv81YAh5b3uvqGvOc3GfSgHvx/HeVm8q722f+bXYp+scyXMjA+//EfI+JtL7P9nEuuE=
+  </data>
+ </layer>
+ <layer name="features" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2zFOw0AQBdAJV0joOUF6KjgBTS4BAkFEQe0ORAdcICVFuAMVDZdirMSSQSg0cRbH70lf67ULT/GLlSVHAAAAAAAAAAAAAABDdpm5WqVqkveqwmOxwceGnIwKDtYjNxFHs1zbyXuLokNBx/SeoTnL80zd+4tcryNOM+95rffstfN17+ue3+a+TrMvPBp0Su8Zonn2fN7qfbMvPBZ0YpI5zBz/yGy95rNq4nsme2Ya37/h/Jap3rNnxvF378d6DwAAAADAQD2NIp4zL/4X4B+4O9jNez6z78vMm94DAB17LT1ATzzmOXDROgs+tK7vd3RGZHv0fnv0vz/0HgBWvgBrhTV5
+  </data>
+ </layer>
+ <layer name="trees" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2sEJwyAYhmF37gIdJ2SNQsYIDlA6Q9Or2BR6Cfo9DwgSDXh4j38pML7lWI9jrX+ew4h0TyLdk+jT9a2cd392DiPSPYmWqx8AF9A9iXRPIt2TSPck0j2JdE8i3ZNI9wDMZC3lbtaCNLonke5pJczX655Wwpyx7mnpHua0H93vVz8CAAAAAAAAAAAAAmzNfvt2ESZSm33t3oK51GZfu7cAYCzPzrfXj3/eUR8zwg==
+  </data>
+ </layer>
+ <layer name="leaves" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1b0JAmEQBNA9rxHbMLMqNbQHG7AA/3ow0RrkwFJcMDnMdfG+92CSjSYY2AgAgOlYzaobAAAAAABM19DF8trFfpy8zat7wTflzuPxkbxtq3vBN9k9LbJ7WmT3tMjuadHw3vlznMHugUat+4hNX92CSqf8i+fMJbPrqtvAb9xy6/fMIXO0ewAmaFFdAAAAAAAAAAAAAAAAAOCPvAD1dTMJ
+  </data>
+ </layer>
+ <layer name="collision" width="190" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztnM1uwyAQBiM1bc99jr7/s/XW1lEVFWGDF7zAws5InMpfPiYYO01uNwBffL2MngFAf/AePIL34BG8B4/gPazExz1dPoOC9+ARvAeP4D14BO/XIXWuhT14Dx7Be/AI3tvmsT5hAR3I0jbh+sRrxTm+Hry3Tc57+Kf0np4s9ZCeSeJ6uc8Y8b4NZKmH1NESlzW85xy0B+/16OV97vrgyXHJ603VwXs9rO73sIcs9cD7eSBLPXp4f6VIx/SAxQxmPb+29v4KK3tf48pqGYwE7+dhtgy0rgFne0Tt+SJskwLvx0MGxxx5X9rmaj3J36Ws5r3kLBx/t/BZHqyQQQviXPB+LaxnIH1fa9/vWvae5znXIYM/4veOde+vwJqTQXgfG+6LeD8XZ9e4o/oW+d7m9fOY26DfOsH7tbGSwX3z+3Urb1t5N/D/t3i/NqMyyHkeg/flcynt0zolZxhpfz0o8Tymdo6p5zuS5z54b4ua9SjpT4srnsdI20r3BEm9o5y1nhWWej/DXifNp7Sk5mwlA03PY0q8l7ST1Gu5J1q7d5mhzxbe1/ahvQ/lxqmp59n73Gd6eL/3Nczn7Hzca6/C+3bjz9Kntf2+BzN7b/E3EvBe3n7kdz1Ged+y9BrnbHwtVvV+JCO8r6HFPj6joy36bOH9L8roxcM=
+  </data>
+ </layer>
+ <objectgroup color="#000000" name="nodes" width="190" height="40">
+  <object type="enemy" x="792" y="672" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="624" y="720" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2568" y="432" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2784" y="432" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object name="leaf" type="material" x="3792" y="360" width="24" height="24"/>
+  <object type="liquid" x="0" y="888" width="336" height="72">
+   <properties>
+    <property name="death" value="true"/>
+    <property name="drown" value="true"/>
+    <property name="opacity" value="0.8"/>
+    <property name="sprite" value="images/liquid/quicksand.png"/>
+   </properties>
+  </object>
+  <object name="treeup" type="door" x="4296" y="432" width="48" height="72">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="treedown"/>
+   </properties>
+  </object>
+  <object type="enemy" x="1992" y="312" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2712" y="360" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="912" y="456" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="528" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="984" y="576" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="door" x="336" y="240" width="24" height="600">
+   <properties>
+    <property name="instant" value="true"/>
+    <property name="level" value="gay-island-5"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="next"/>
+   </properties>
+  </object>
+  <object name="main" type="door" x="360" y="792" width="24" height="48"/>
+  <object type="enemy" x="3744" y="336" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="1032" y="456" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3600" y="216" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object name="gaysave" type="savepoint" x="2808" y="168" width="24" height="48"/>
+  <object name="peanut" type="material" x="3504" y="240" width="24" height="24"/>
+  <object name="mushroom" type="material" x="2688" y="456" width="24" height="24"/>
+  <object name="mushroom" type="material" x="888" y="480" width="24" height="24"/>
+  <object type="liquid" x="1320" y="816" width="120" height="144">
+   <properties>
+    <property name="death" value="true"/>
+    <property name="drown" value="true"/>
+    <property name="opacity" value="0.8"/>
+    <property name="sprite" value="images/liquid/water.png"/>
+   </properties>
+  </object>
+  <object type="enemy" x="1356" y="816" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="fish"/>
+    <property name="sheet" value="betafish"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="552" width="48" height="48">
+   <properties>
+    <property name="crack" value="false"/>
+    <property name="dying_animation" value="boulder-crumble.png"/>
+    <property name="hp" value="3"/>
+    <property name="sound" value="boulder-crumble"/>
+    <property name="sprite" value="boulder.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="enemy" x="1918" y="499" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2148" y="840" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="killing_floor" x="1752" y="888" width="72" height="24"/>
+  <object type="liquid" x="2064" y="768" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="720" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="744" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="2064" y="792" width="24" height="24">
+   <properties>
+    <property name="line" value="line1"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/snowblock.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="2088" y="696" width="24" height="24">
+   <properties>
+    <property name="line" value="line2"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/snowblock.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="672" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="624" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="648" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="552" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="576" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="528" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="2112" y="600" width="24" height="24">
+   <properties>
+    <property name="line" value="line3"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/snowblock.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="2136" y="504" width="24" height="24">
+   <properties>
+    <property name="line" value="line4"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/snowblock.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="480" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="2064" y="408" width="24" height="24">
+   <properties>
+    <property name="line" value="line5"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/snowblock.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="648" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="672" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="624" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="432" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="480" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2064" y="456" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesright.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="768" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="720" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="744" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="576" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="528" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="552" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="432" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="2184" y="456" width="24" height="24">
+   <properties>
+    <property name="injure" value="true"/>
+    <property name="mode" value="once"/>
+    <property name="speed" value="0.9"/>
+    <property name="sprite" value="images/sprites/winter/iciclesleft.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2496" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object name="kingcrab" type="npc" x="2760" y="864" width="48" height="48"/>
+  <object type="movingplatform" x="2953" y="216" width="48" height="48">
+   <properties>
+    <property name="line" value="linea"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/boulder.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="3342" y="354" width="48" height="48">
+   <properties>
+    <property name="line" value="lineb"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/boulder.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="movingplatform" x="3421" y="773" width="48" height="48">
+   <properties>
+    <property name="line" value="linec"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/boulder.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object type="liquid" x="3000" y="888" width="480" height="72">
+   <properties>
+    <property name="death" value="true"/>
+    <property name="drown" value="true"/>
+    <property name="opacity" value="0.8"/>
+    <property name="sprite" value="images/liquid/quicksand.png"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3672" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="hermitCrab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3864" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3912" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3768" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="hermitCrab"/>
+   </properties>
+  </object>
+  <object name="treedown" type="door" x="4296" y="72" width="24" height="48">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="treeup"/>
+   </properties>
+  </object>
+  <object name="next" type="door" x="4488" y="72" width="24" height="48">
+   <properties>
+    <property name="level" value="hidden-town"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+  <object name="guard" type="npc" x="4416" y="72" width="48" height="48"/>
+  <object type="movingplatform" x="3316" y="546" width="48" height="48">
+   <properties>
+    <property name="line" value="lined"/>
+    <property name="offset_x" value="0"/>
+    <property name="offset_y" value="0"/>
+    <property name="speed" value="2.4"/>
+    <property name="sprite" value="images/blocks/boulder.png"/>
+    <property name="start" value="0"/>
+   </properties>
+  </object>
+  <object name="treedown2" type="door" x="2832" y="792" width="72" height="48">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="treeup2"/>
+   </properties>
+  </object>
+  <object name="treeup2" type="door" x="2880" y="432" width="24" height="48"/>
+  <object type="breakable_block" x="1728" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1752" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1752" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1800" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1800" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1776" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1800" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1776" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1776" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1752" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1920" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1944" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1824" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1872" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1872" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1896" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1920" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1824" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1896" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1848" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1848" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1848" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1824" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1872" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1944" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1944" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1896" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1920" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1752" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1824" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1776" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1944" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1872" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1920" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1800" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1896" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1848" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2496" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2496" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2496" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2520" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2520" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2520" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2520" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2568" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2568" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2568" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2568" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2544" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2544" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2544" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2544" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2592" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2592" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2592" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2592" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2928" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2952" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2904" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2880" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2904" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2880" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2904" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2904" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2904" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2880" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2880" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2880" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2832" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2832" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2856" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2856" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2808" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2832" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2808" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2856" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2856" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2808" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2832" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2856" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2808" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2832" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2808" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2784" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2736" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2760" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2784" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2712" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2688" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2688" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2712" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2712" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2688" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2760" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2784" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2736" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2712" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2736" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2784" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2736" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2784" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2760" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2688" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2712" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2760" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2760" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2688" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2736" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="744" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="792" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2640" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2664" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2616" y="768" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="336" width="48" height="48">
+   <properties>
+    <property name="crack" value="false"/>
+    <property name="dying_animation" value="boulder-crumble.png"/>
+    <property name="hp" value="3"/>
+    <property name="sound" value="boulder-crumble"/>
+    <property name="sprite" value="boulder.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2472" y="816" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2472" y="840" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1680" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1728" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="1704" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="sand-block-Island.png"/>
+   </properties>
+  </object>
+  <object type="info" x="2849" y="432" width="72" height="48">
+   <properties>
+    <property name="info" value="it's a bush...|nothing more"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2472" y="888" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="2472" y="864" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2424" y="864" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="hermitCrab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2712" y="864" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="hermitCrab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="2856" y="864" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="hermitCrab"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2-grass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="264" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock-grass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="288" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="312" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="336" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="360" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3480" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="snowblockgrass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="408" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="384" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2-grass.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="432" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="456" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="480" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="504" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="528" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="600" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="552" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="624" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="648" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="576" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3888" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3576" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3552" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3864" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3840" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3600" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="696" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3624" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3696" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3648" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3672" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3744" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3816" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3720" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3768" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3792" y="720" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3816" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3576" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3528" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3624" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="3720" y="744" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="BossCrab"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3528" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3504" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3936" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3912" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="1"/>
+    <property name="sprite" value="snowblock.png"/>
+   </properties>
+  </object>
+  <object type="breakable_block" x="3960" y="672" width="24" height="24">
+   <properties>
+    <property name="hp" value="2"/>
+    <property name="sprite" value="sideblock2.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="4008" y="816" width="480" height="144">
+   <properties>
+    <property name="death" value="true"/>
+    <property name="drown" value="true"/>
+    <property name="opacity" value="0.8"/>
+    <property name="sprite" value="images/liquid/water.png"/>
+   </properties>
+  </object>
+  <object type="liquid" x="4488" y="168" width="48" height="792">
+   <properties>
+    <property name="death" value="true"/>
+    <property name="drown" value="true"/>
+    <property name="opacity" value="0.8"/>
+    <property name="sprite" value="images/liquid/waterfall.png"/>
+   </properties>
+  </object>
+  <object type="enemy" x="4008" y="816" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="fish"/>
+   </properties>
+  </object>
+  <object type="enemy" x="4176" y="816" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="fish"/>
+   </properties>
+  </object>
+  <object type="enemy" x="4392" y="816" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="fish"/>
+   </properties>
+  </object>
+  <object type="sprite" x="4368" y="96" width="48" height="48">
+   <properties>
+    <property name="flip" value="true"/>
+    <property name="height" value="19"/>
+    <property name="sheet" value="images/sprites/hermittown/armorcat.png"/>
+    <property name="width" value="34"/>
+   </properties>
+  </object>
+  <object type="info" x="4368" y="72" width="48" height="48">
+   <properties>
+    <property name="info" value="Meow"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="movement" width="190" height="40">
+  <object name="line1" x="1999" y="798">
+   <polyline points="69,7 207,7"/>
+  </object>
+  <object name="line2" x="1999" y="701">
+   <polyline points="69,7 207,7"/>
+  </object>
+  <object name="line3" x="1999" y="604">
+   <polyline points="69,7 207,7"/>
+  </object>
+  <object name="line4" x="1998" y="509">
+   <polyline points="69,7 207,7"/>
+  </object>
+  <object name="line5" x="2007" y="413">
+   <polyline points="69,7 70,7"/>
+  </object>
+  <object name="linea" x="2815" y="221">
+   <polyline points="69,7 312,8"/>
+  </object>
+  <object name="lineb" x="3058" y="403">
+   <polyline points="69,7 312,8"/>
+  </object>
+  <object name="linec" x="3163" y="778">
+   <polyline points="69,7 312,8"/>
+  </object>
+  <object name="lined" x="3058" y="591">
+   <polyline points="69,7 312,8"/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="24" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="offset" value="10"/>
+  <property name="overworldName" value="island_5"/>
+  <property name="soundtrack" value="mamma-mia"/>
+ </properties>
+ <tileset firstgid="1" name="gay-island" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/gay-island.png" width="624" height="936"/>
+ </tileset>
+ <tileset firstgid="1015" name="collisions" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/collisions.png" width="632" height="512"/>
+ </tileset>
+ <layer name="background" width="60" height="24">
+  <properties>
+   <property name="parallax" value="0.1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzVl+kNwjAMRl0EElPAGrAGrAFr0CWYA/52BFgDhoBEYCmyctjO0bbSU4+k6fdwUpW+A+gJlw4Geo2LvXfKSDJzfafsrck2Z9+TkpAvtmnHrc1ByR0A5sjOZJdi6/eEXz3tfk5sTH4t1hf3b5gHS5NXi/XE/Wok1oswvv4vgCEX67utTMwL4YzzMHlz2ZtxcuC40H7aZ91M3lxsfY9CQl6cPqn7YlxNXi5n0x+h13unLQbNmWpPwXlmKHcuqW9NzOie0zYNku/7Fr6+bBKPqfviOeZxj3PxjSXJVBo6b0t5xvzHpLaf1hP+Ww3Xmu7aNVbTt2VdOe8ngDa+pX+LT/dD8r4FspX2rVVzdHWRutbyLVVnnxfH2V2vLX05cz90TO9357Cv1nTdtvKVvEPdNRjzpS6uJ/0/H5vLdvsCEzJbPQ==
+  </data>
+ </layer>
+ <layer name="bg_penises" width="60" height="24">
+  <properties>
+   <property name="parallax" value="0.86"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt1jEOgCAMheHi5MX0Gnr/U2CHLkiMiVDw9f0jA8kHgVTke1sS2VODjX7ScVnPAF671yhec9KLGbJ3Xe5r6N7SjOzVSjO6V4voNXMErxbNa9GLHb3Y0YtdL29tdp2h3t7ZzB7emnvUOXi+3ye/V6P+K3rflwF2bCNL
+  </data>
+ </layer>
+ <layer name="bg_trees" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztz7sRACAIREFKt24iEwsQE3+7Mczcy4iWMSfHbRZ+TlPZrvc+P/ZWbm/vXaH3bT/27t4AAAAAFR18sCyp
+  </data>
+ </layer>
+ <layer name="bg_leaves2" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzzEKACAMBMFglf+/2F6wExPCHEx/mysiAQAAAGjrXPUfvXpftU7uva361+/eDQtbNx8=
+  </data>
+ </layer>
+ <layer name="bg_leaves" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDHVgzMTgIMnEoADDA+0eWgKQX/8zMjCA8EgAklD/jgQwUuOWVP8Cw+kATRxEY0CufyVHmH9B6odiHMP8So5/h2Ick+pfZPUjpYwbbKCAeaBdMApGAeVgzwhLxyPNv8QADiZUPNzBqH+HJ0D356h/hxfA5V8Aa4YhOg==
+  </data>
+ </layer>
+ <layer name="filler" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt01EKgDAIgOGRR+ipruW1OnQPMYhoyygw7f9AxsAHRS0FABCFXvwBfFPrVrPe8J/61Rsxi1ORD1nmlmm2unvP4phXjbJFNL2drT1ZIsoOtOp/0yS2e7fmAZksg3cFADysM38OGQ==
+  </data>
+ </layer>
+ <layer name="floor" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztlt8NgyAQh2+UzlD7Ijv4YPpnCavYdAFf2jk6WkfpEWJyJqdgiyKUX/JFQGP4cigApPS5+57AyvkX3wNAlyF7DVAyfT+6XJAjA453HqflNBWSW1BF4owuO1XDGn0avEqk1f1BjfG5l7dJOoqq7QO0T4G+1K+AoW8TuC91tfGVgfv269jW9xa4ryS+Al1zBgFx1rcEfh8qSc1D/l9x+w3nayKUfOOWfMPJlIPteetKUP16VYN5mfKge/Icnob3mhAL+rpazy45Jd/kG5GvYonv+7wBr1/r/x5pAzM+dnbcOsnXrq18P36kuIc=
+  </data>
+ </layer>
+ <layer name="tree" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0csNgCAURNFHa2oZ1mHswFaMXfgpA63FYa8bP5C8mZPMjhBuMLtWBbMaa8LNgYdGbMWmb699rUXngPUkvR1Z719Ye7fSD8mE9X8ZemdsMZ7ehOl/E/X6pl7f1OtbxHbsKP0QERERyeYE6pcmag==
+  </data>
+ </layer>
+ <layer name="trees" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztl01SwkAQhSdhz9qfC3gHToBbj6IHyM5zuDKlW0C3Fq78AXUtrEQPYZX6xtDlgJ2hSXogVPiqXg3pGZp+mR4gxqyGSWTMJ6N2vKICBDQb+jnPp+OlfurSHATwu0ncoffuoQfosWAf3uiWVBiJlzfEJ9A79FGhc1cEiZcvxL/tHPo8CtzrKdSHLgLll3jZQXwX2oP2nTUafT5POh2tX+3cBHkhjgRrLL7e4O6FNLYod1k4L5I1vt7g6pXEUkHuspCXLvL3oKtsTHCddKA8v3l9nlevJOb2s2QfpLj1Ud4hPvcJes7GBNfJwOPXF+fuhTQWwm/HOROUtxfP6hj/+06i7DWtsXt/zbyXg5uTxrT9Yt/m91Mku/bFGbX9ur9Hmn61qKtf6n1ubpkY+b3NWVtlFnk7bPz/Lqz6/mqz9bvmggLD+T3d8GcyH6/QCBqbP79n8e9Zrx2tdRdQQ7hnxy1hWOZM/wAXzY8c
+  </data>
+ </layer>
+ <layer name="tree2" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt00EKgDAQQ9HB83uPFj2FLb2XI9K9UJiA8x9knyxiBgDAd8XTPae6SJBq795DXSRQxr0ZXJ5mefY+5n+BvxnqAgAQbN/UDQCsuAFh+Atf
+  </data>
+ </layer>
+ <layer name="leaves" width="60" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztlO8NQDAQxasLGQPzGKKNKco6xmAJEYlrQtSf8gFNe71fcolS9d7VK2N+0CaMTVDdTennKf9PQ/nf0ifIr3u/LonNbwY++ge/A1SBxK9Ge86hxuS6MHklCJdIyk7QqBf79+ZdIiwE9z/rYtEnLVrv/tfj/BrGDd+uj/OEZS2XPVp1KUPrF983+6QuemCOG+O+rScETmLb7/oh+9iwZZ/AS8X357+M+HynvG/MABxMNw==
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="24" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztlksKgDAMBQt6gd5/4y3dahdCN/VLwnN4A1knk5A2pRjDp87jMP/kbKbEGR8eVL+eDCeV3inUYHJQeKP2XEuLvIxcnvxBCrM3LDJ3eZ3ehypRNX/plXK/IrAvmytf2i0Std+EO6F3GPkQPM09NqABOQs=
+  </data>
+ </layer>
+ <objectgroup color="#000000" name="nodes" width="60" height="24">
+  <object name="main" type="door" x="168" y="24" width="24" height="48">
+   <properties>
+    <property name="level" value="gay-island-4"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="hiddenleaves"/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="312" y="264" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="408" y="336" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="144" y="216" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="576" y="360" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="bubblgum" type="spawn" x="48" y="360" width="24" height="24">
+   <properties>
+    <property name="key" value="rusted_brass"/>
+    <property name="messege" value="How long has this been here?"/>
+    <property name="nodeType" value="material"/>
+    <property name="spawnType" value="keypress"/>
+   </properties>
+  </object>
+  <object type="liquid" x="1104" y="528" width="312" height="48">
+   <properties>
+    <property name="sprite" value="images/liquid/quicksand.png"/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="735" y="82" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="861" y="62" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="1031" y="100" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="947" y="24" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="912" y="456" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="192" y="336" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="72" y="264" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="192" y="48" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="144" y="48" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="240" y="96" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="144" y="120" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="720" y="360" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="stick" type="material" x="977" y="312" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="rusted_brass" type="key" x="996" y="154" width="24" height="24">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object type="enemy" x="336" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="96" y="336" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="648" y="336" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="936" y="432" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="crab"/>
+   </properties>
+  </object>
+  <object name="next" type="door" x="1416" y="0" width="24" height="480">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

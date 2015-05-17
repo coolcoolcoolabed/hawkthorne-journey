@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="26" height="21" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="blue" value="250"/>
+  <property name="green" value="222"/>
+  <property name="offset" value="36"/>
+  <property name="overworldName" value="forest_3"/>
+  <property name="red" value="115"/>
+  <property name="soundtrack" value="britta-bot"/>
+ </properties>
+ <tileset firstgid="1" name="forest" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/forest.png" width="216" height="504"/>
+ </tileset>
+ <tileset firstgid="190" name="collisions" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/collisions.png" width="632" height="512"/>
+ </tileset>
+ <layer name="background" width="26" height="21">
+  <data encoding="base64" compression="zlib">
+   eJwzYmBgMAZiIyrT6IDa5o/aMzTt0aQRVgViNSQ8as+oPSAsSyOsNopH8SimGgYAK/dUrw==
+  </data>
+ </layer>
+ <layer name="foreground" width="26" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B+QB2ILemA1enoH3zAHYtYLBAnAnESAXWk2AMDmkjsNCD2A+JsIvWSYg8yINceFhpgdKBGIzwKRsEooB4AAGmzDik=
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="26" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANMAJiYySaVmDUnqFljyUN7RqMAJd/w4hUNwpGwSgYBcMdAAA0QQW+
+  </data>
+ </layer>
+ <layer name="collision" width="26" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowACLtMAo4N9NHI7urmj9ozaA+PTCo+CUTAKqAMAydgrSg==
+  </data>
+ </layer>
+ <objectgroup color="#9ca478" name="floorspace" width="26" height="21">
+  <object x="24" y="264" width="504" height="24">
+   <properties>
+    <property name="primary" value="true"/>
+   </properties>
+  </object>
+  <object x="54" y="279">
+   <properties>
+    <property name="height" value="24"/>
+   </properties>
+   <polygon points="0,0 -1,-24 77,-23 99,-1"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#000000" name="nodes" width="26" height="21">
+  <object name="main" type="door" x="336" y="216" width="24" height="48">
+   <properties>
+    <property name="level" value="tower-block"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="tower-block-room-1"/>
+   </properties>
+  </object>
+  <object name="rock" type="material" x="173" y="255" width="24" height="24"/>
+  <object type="sprite" x="48" y="240" width="120" height="48">
+   <properties>
+    <property name="depth" value="18"/>
+    <property name="flip" value="true"/>
+    <property name="height" value="47"/>
+    <property name="sheet" value="images/sprites/town/bed.png"/>
+    <property name="width" value="95"/>
+   </properties>
+  </object>
+  <object type="sprite" x="24" y="216" width="24" height="48">
+   <properties>
+    <property name="flip" value="true"/>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/town/bed_headboard.png"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object name="babygrettel" type="npc" x="241" y="252" width="24" height="24"/>
+  <object name="duck" type="material" x="366" y="254" width="24" height="24"/>
+ </objectgroup>
+</map>
