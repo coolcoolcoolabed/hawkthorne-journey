@@ -6,7 +6,7 @@ local Gamestate = require 'vendor/gamestate'
 return {
   width = 48,
   height = 48,  
-  greeting = 'Hey what ya know.  Someone new.', 
+  greeting = 'Hey, what ya know.  Someone new.', 
   animations = {
     default = {
       'loop',{'1-2,1'},0.60,
@@ -39,10 +39,10 @@ return {
   },
   talk_responses = {
     ["Hello!"]={
-      "Careful, WAS THAT HIM!",
+      "Hello, WAS THAT HIM!",
     },
     ["Who?"]={
-      "The Crazy Hermit man. he wants to kill me.",
+      "The Crazy Hermit man. He wants to kill me.",
     },
     ["Any useful info for me?"]={
       "Be careful, the sky will fall!",

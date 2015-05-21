@@ -23,18 +23,17 @@ return {
   },
   talk_responses = {
     ["inventory"]={
-      "These Are Things i found around the island.",
+      "These Are Things I found around the island.",
       "Press {{yellow}}".. string.upper(controls:getKey('INTERACT')) .."{{white}} to view item information.",
     },
     ["Hello!"]={
-      "I am the king Crab.",
+      "I am the King Crab.",
     },
     ["Who Are You?"]={
-      "i am the King Crab.",
+      "I am the King Crab.",
       "I Rule over all the crabs",    },
-    ["What do you Do?"]={
-      "i rule all the crabs and i...",      "Scavenge the land.",
-      "And...",      "rule over all the crabs.",    },
+    ["What do you Do?"]={"I rule all the crabs and i...",   "Scavenge the land.",
+   "And...",   "rule over all the crabs.",    },
   },
   inventory = function(npc, player)
     local screenshot = love.graphics.newImage( love.graphics.newScreenshot() )

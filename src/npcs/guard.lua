@@ -28,7 +28,7 @@ return {
     },
     ["What is this Place?"]={
       "It's the {{grey}}Crabs{{white}}! We all used to live on Gay Island But then these crabs came.",
-      " most of us died Except those who are here now.",
+      " Most of us died Except those who are here now.",
   "We have to hide in this cave I Keep everyone safe from those crabs.",
     },
     ["How many survived?"]={

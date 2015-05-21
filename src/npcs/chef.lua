@@ -23,7 +23,7 @@ return {
   },
   talk_responses = {
     ["inventory"]={
-      "Normerly you would get my food from my wife.",
+      "Usually you would get my food from my wife.",
       "Press {{yellow}}".. string.upper(controls:getKey('INTERACT')) .."{{white}} to view item information.",
     },
     ["Hello!"]={

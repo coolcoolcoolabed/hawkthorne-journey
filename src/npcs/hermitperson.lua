@@ -39,19 +39,19 @@ return {
     },
     ["What is this place?"]={
       "This is our town,",
-      "We Were forced to hide up here when those Crabs Atacked.",      "I Hear There is a crab King That Rules over the crabs.",
+      "We Were forced to hide up here when those Crabs Attacked.",      "I Hear There is a crab King That Rules over the crabs.",
 
     },
     ["What are you carrying?"]={
-      "It's a Rock.",      " My Wife and i Mine it's a very important Job.",
+      "It's a Rock.",      " My Wife and I Mine it's a very important Job.",
       "My Wife is in the mine right now.",
     },
     ["Where is he?"]={
-      "I hear he hides in a hole some where in the jungle",
+      "I hear he hides in a hole somewhere in the jungle",
 
     },
     ["He can not die"]={
-      "He hasen't yet at least!",
+      "He hasn't yet at least!",
     },
     ["Lets find him?"]={
       "I have a good job",
@@ -59,16 +59,16 @@ return {
       "I am making money to support my family",
     },
     ["Get this town together!"]={
-      "That is rude i am working very hard.",
-      "but I forgive you.",
+      "That is rude, I am working very hard.",
+      "But I forgive you.",
     },
     ["I will Find him"]={
       "Good luck just know",
-      "It wont be easy",
+      "It won't be easy",
     },
     ["Seems too hard"]={
-      "true",
-      "he might not even exist?",
+      "True",
+      "He might not even exist?",
     },
     ["I will think about it"]={
       "Think hard",

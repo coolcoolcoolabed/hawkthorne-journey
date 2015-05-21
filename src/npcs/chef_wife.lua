@@ -30,10 +30,10 @@ return {
       "Hello, May i take your order?",
     },
     ["Who cooked this?"]={
-      "My Husband Chef.",
+      "My Husband the Chef.",
     },
     ["Who is that guy at the table?"]={
-      "What ever you do don't ask him. He will talk about anything or everything.",
+      "What ever you do not ask him.  He will babble about anything or everything.",
     },
   },
   inventory = function(npc, player)
