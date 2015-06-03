@@ -4,7 +4,7 @@
   <property name="blue" value="250"/>
   <property name="green" value="222"/>
   <property name="offset" value="36"/>
-  <property name="overworldName" value="forest_3"/>
+  <property name="overworldName" value="island-3"/>
   <property name="red" value="115"/>
   <property name="soundtrack" value="pocketful"/>
  </properties>
@@ -16,25 +16,25 @@
  </tileset>
  <layer name="background" width="26" height="21">
   <data encoding="base64" compression="zlib">
-   eJwzYmBgMAZiIyrT6IDa5o/aMzTt0aQRVgViNSQ8as/gtyeHBlgNDcuSgEnRh27PKB7Fo5h8DADwrlpK
+   eJwzYmBgMAZiIyrT6IDa5o/aMzTt0aQRVgViNSQ8as+oPSAsSwImRZ/aKB7Fo5hqGACJn1TK
   </data>
  </layer>
  <layer name="foreground" width="26" height="21">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4B+QB2ILemA1enoH3zAHYtYLBAnAnESAXWk2AMDmkjsNCD2A+JsIvWSYg8yoJc95AA1GuFRMApGAfUAACLUDdU=
+   eJxjYBgFo4B+QB2ILemA1enoH3zAHYtYLBAnAnESAXWk2AMDmkjsNCD2A+JsIvWSYg8yINeerTTA6ECNRngUjIJRQD0AAOpvHK4=
   </data>
  </layer>
  <layer name="Tile Layer 5" width="26" height="21">
   <data encoding="base64" compression="zlib">
-   eJxjYKANMAJiYySaVmDUnqFljyUN7RqMAJd/w4hUN5zBYhpgUoAaFBMrPgpGwSigDQAAT9cTtQ==
+   eJxjYKANMAJiYySaVmDUnqFljyUN7RqMAJd/w4hUNwpoB9SgmFjxUTAKRgFtAABHLwZW
   </data>
  </layer>
- <layer name="collision" width="26" height="21">
+ <layer name="collision" width="26" height="21" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFowACLtMAo4N9NHI7urmj9ozaA+PTCo+CUTAKqAMAydgrSg==
   </data>
  </layer>
- <objectgroup color="#9ca478" name="floorspace" width="26" height="21">
+ <objectgroup color="#9ca478" name="floorspace" width="26" height="21" visible="0">
   <object x="24" y="264" width="504" height="24">
    <properties>
     <property name="primary" value="true"/>

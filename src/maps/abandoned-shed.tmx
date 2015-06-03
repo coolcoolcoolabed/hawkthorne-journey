@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="22" height="14" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="overworldName" value="island-3"/>
+  <property name="soundtrack" value="abeds-town"/>
+ </properties>
+ <tileset firstgid="1" name="inside_hidden" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/inside_hidden.png" width="288" height="240"/>
+ </tileset>
+ <tileset firstgid="121" name="inside" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/inside.png" width="288" height="240"/>
+ </tileset>
+ <layer name="floor" width="22" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B0wE9Dc2llNiVAm0RMLFhMJh41F7u5AGW4Jdo=
+  </data>
+ </layer>
+ <layer name="wall" width="22" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFIkDcTiRuQ8KEgAIDwwJSzSUGiCBhappLK/fyE4lB5nIwMByghbl8ULMpMVcMh7l8NHLvQJtLCuCgkbkws4cjsGFgSKCGOQAJLCNb
+  </data>
+ </layer>
+ <layer name="pillar_bottom" width="22" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFW4BYhAg8HYkN1NPAQACAzFVgYFiAjHuAYuiYHHNp5d4ZQDcSwuSYSwyYDqVpZS7DEDI3A2oetc1Np4G5IFBMhrm3GRgOEGs+td1LbXNvk2GuDbB4AKpbQCLGMBcAe9BHoA==
+  </data>
+ </layer>
+ <layer name="pillar_top" width="22" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYECALQwMBxiIBNMZGBpWAzFUH14AM1eBgWEBIQwydzvUbGLNJda9IHo7CeYS615Sw4FY9w6WcACBWiCuJ2Due4Q+os3tBOJuAuZ+IMNcQgAWDtQ2F03fqLlEmmsDoRNIxBgAAHuOUCM=
+  </data>
+ </layer>
+ <objectgroup color="#a47533" name="floorspace" width="22" height="14">
+  <object x="408" y="264">
+   <properties>
+    <property name="primary" value="true"/>
+   </properties>
+   <polygon points="0,0 -48,-48 -296,-47 -296,49 0,48"/>
+  </object>
+  <object x="144" y="287">
+   <properties>
+    <property name="height" value="20"/>
+   </properties>
+   <polygon points="0,2 8,-7 24,-7 15,2"/>
+  </object>
+  <object x="208" y="239">
+   <properties>
+    <property name="height" value="24"/>
+   </properties>
+   <polygon points="36,0 16,25 -88,25 -88,1"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#000000" name="nodes" width="22" height="14">
+  <object type="sprite" x="144" y="264" width="24" height="24">
+   <properties>
+    <property name="depth" value="2"/>
+    <property name="height" value="24"/>
+    <property name="sheet" value="images/sprites/town/little_chest_left.png"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object type="sprite" x="144" y="216" width="120" height="48">
+   <properties>
+    <property name="depth" value="18"/>
+    <property name="flip" value="true"/>
+    <property name="height" value="47"/>
+    <property name="sheet" value="images/sprites/town/bed.png"/>
+    <property name="width" value="95"/>
+   </properties>
+  </object>
+  <object type="sprite" x="120" y="192" width="24" height="48">
+   <properties>
+    <property name="flip" value="true"/>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/town/bed_headboard.png"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object name="main" type="door" x="366" y="180" width="17" height="62">
+   <properties>
+    <property name="button" value="RIGHT"/>
+    <property name="level" value="gay-island-6"/>
+    <property name="to" value="shed"/>
+   </properties>
+  </object>
+  <object name="window" type="door" x="240" y="144" width="24" height="24">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="shedw"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="33" height="14" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="autosave" value="false"/>
+ </properties>
+ <tileset firstgid="1" name="inside_hidden" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/inside_hidden.png" width="288" height="240"/>
+ </tileset>
+ <tileset firstgid="121" name="acschool" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/acschool.png" width="264" height="240"/>
+ </tileset>
+ <tileset firstgid="231" name="collisions" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/collisions.png" width="632" height="512"/>
+ </tileset>
+ <layer name="bg" width="33" height="14">
+  <data encoding="base64" compression="zlib">
+   eJyLYWBgiBnFoxiIORgYFgy0/R6DwH6+QWD/QLgB3X56uwGb/fR0Ay776eUGkP3Y7KaXG0D28+Oxf6DyxWDEALF0nxo=
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="33" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFjAPtACDgHWgHDBIgP9AOYBhYN8ij0aNuIA3woGFq2I3uhiQ0fiIaXwINY1NDqt3obshD4+ei8VXQMLqafCAuoNAN9ADodg6G8gEEAONYBwU=
+  </data>
+ </layer>
+ <layer name="walldeco" width="33" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4CBIZCBoSEAiAfafo9BYH/IqP2j9g8R+wuBuAhNDMhvAIo3FABxPhCnAsXSqGS/DQPDglHMsAAA021RXg==
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="33" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoIA3kGhgWjmGEBAFNjMT8=
+  </data>
+ </layer>
+ <layer name="collision" width="33" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4CB4QUQPx+1f9T+IW4/IyMqpof9YkTYQ0jNUAn/5zTGQwUAAKfcJiY=
+  </data>
+ </layer>
+ <objectgroup name="nodes" width="33" height="14">
+  <object name="upstairs" type="door" x="768" y="24" width="24" height="48">
+   <properties>
+    <property name="level" value="abandoned-house"/>
+    <property name="to" value="basement"/>
+   </properties>
+  </object>
+  <object type="enemy" x="408" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="coconut_crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="216" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="coconut_crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="24" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="coconut_crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="504" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="coconut_crab"/>
+   </properties>
+  </object>
+  <object name="bone" type="material" x="120" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="168" y="228" width="24" height="24"/>
+  <object name="bone" type="material" x="312" y="192" width="24" height="24"/>
+  <object name="bone" type="material" x="360" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="312" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="480" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="528" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="408" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="216" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="168" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="48" y="264" width="24" height="24"/>
+  <object name="bone" type="material" x="0" y="264" width="24" height="24"/>
+  <object type="enemy" x="96" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="coconut_crab"/>
+   </properties>
+  </object>
+  <object type="enemy" x="312" y="240" width="48" height="48">
+   <properties>
+    <property name="enemytype" value="coconut_crab"/>
+   </properties>
+  </object>
+  <object name="dark" type="door" x="72" y="240" width="24" height="48">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="black"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -22,6 +22,6 @@ return {
     {"pink_potion",2,300},
 
   },
-  misc = {    {"rainbow_lightning",1,750}
+  misc = {    {"lightning",1,750}
   }
 }

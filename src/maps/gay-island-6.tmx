@@ -4,7 +4,6 @@
   <property name="offset" value="26"/>
   <property name="overworldName" value="island_3"/>
   <property name="soundtrack" value="mamma-mia"/>
-  <property name="title" value="Gay Island 2"/>
  </properties>
  <tileset firstgid="1" name="abandoned-village" tilewidth="24" tileheight="24">
   <image source="../images/tilesets/abandoned_village.png" width="624" height="936"/>
@@ -40,22 +39,22 @@
  </layer>
  <layer name="filler" width="190" height="40">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer name="floor" width="190" height="40">
   <data encoding="base64" compression="zlib">
-   eJztnUtu00AYx53WgARseJVyCNQUcQB2qOEUlBUSh7A4Q7urEKdAQmLBCtGw49EDJFlCtzwFfLYz8tfpvDwZx2P7/5P+SmSP7Znk5/H4kTZJABgWs7TtGgCwfuA9GCLwHgwReA+GCLzvLuNRkuyWyeh91nZ9YuA9+XzsENBdDsj5w2UO4H2Baz+O/r67wPvzwPv+A+/PA+/7xUfKJ4dI49hsOrDvF973i68OZRbk+Zy+T5ZsMbDvF973i9i9fxWJR/C+H/DrcrYxC7yH921xdSN5G3J9M+ax7LB8rRrew/s2uLxReJ9c2Qi3TpP3s7OOR+t9LPsEB96Hg8Yh2XGZ5IuhHM3LRB/9gXL/gj7wvhngfTiW3mUqRzmnSeWnzUvh9nL9TtcyVcn3w3eW5PujvNxnx7a7eJ+/1k1TwPtwrMN7V0R/L967LJvX6xu98pw6bk/nKPc3tPdjat8Oi6oMTS8yVhwrgTvboyKZal6M3i9qLBub9zYm1L49FpX7NL3IBN57IZ59vFcmUz0D2aT3ouwhezbBRGzeNzHGkb3fg/fB4c/C6J6Jadr7POL5A5+IderuA8D7drmbVuMyVeSx2jpo2ftiO/Nq/V5h9dTWK7T3fH6T3pvKdcX7h2m1n6oityHn+cV629galXEZM+TAezO26zlNem8r1wfvdceC3ZrteGQ5puyw9dnKicB783x4b8bkvW6e6hjguw0Rga2cyNC9Dz3GN8HvEbqGn9fAe7v3OfDejM7Xps5r+WftGt7u2L23neP6nu/Ce3W9Qnq/ivND997FT58+X17vY8o+5UlHvLe178Vyva/TMi/Zdpr2PlRMwPvVvJePJ2N47+V9zhHVK5TrRzW9V/39kGnHvP+7mST/KAnVbSS5GNp7eb+awPtOei/f3xOfbczey55vU+5oXIT38H7Zhs55r/Lc5jO8H7b30+qaZXH9Uh7DxOi9rT939bmu97p7uPl0eK+u1yre5zTl/aLq24v2y0637f1P8vsX5TflD+W2h+cmn03l5HNU3T1c+V7tWNpWn7x/mpbx9b5ORNt9fxtj+s1LrN5/J8d/UG7Q+m5SblG2VnDdx3tV363C1MfrvH+2mTwQ0X0Grtfh6njvS4veB8vibJ2De1/32RYB7zevUa4H8tw2fmnDexea8N53vPCGZZVxTp+9536caN5zxPQ619ZDei+A9/qcsMB7eK+qt4v3+5eq6FB5r7qfAu+7473qfd+9d43ufw0IbN6rlhUR57WLNJxX8L673qvKteW96jOfS9vm02XvVctK3ye8t3jvEtn7/xvwfIE=
+   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
   </data>
  </layer>
  <layer name="features" width="190" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt27tOwmAYgOGvTTEBnWV1cHfBncFB70FFjRIGdxY13dQL0NEYTbwKB7wBTzfgYfcCPAx+lZJUTqmU9v+l75N8aaW1FvMOfyqKAAAAAAAAAACQjoojsuyYvgsge1t0DwAT6W3IAJNoWPOmu78S8Q3fAiYU3cNWJTe9a9M9bDTjSivcbqRx/bS7n03wbMhk95ueyFZ7/M7oa8buJy9WE/Ry7Q2excLvc9Poft8Rf0+nrHPi/LTvB/2Xw/fUdKQa5zomu9/xZG5Ff1/R0dfOTd1PXiTp3nZrMd8b3ecP3ZvrfknXM0H3Nd1ue1LVadXoPhNZdh+sR7L7afZ3vx52H3Te0N4b7ebn6D59cdtIKlhzn0TW3lmwvfsA3ZvBOsds93XtvB7pvvO1qfux3V/WDJXwuUa/zz/SvZnuS9r4tM5C16yEWz3ml3ie+cuoa4Z+n3+kezPdz3c9w+k383SPEdjcfTFG90W6xwhs7h5IC90jj+geeUT3yKOs/iYH2ITukUd0jzzqdP/iiry6vfuBw4LIkc5xoff7n/S85wH/gzbsGDCq3ank12iG3X9qn19u737gRnu/0Lns0/27nvcxoO1hxwCTbrXLe50HnbsY+490DACZOfNM38H/4Os68DSyFjyI7O+PYY2IbNH9+ND//0H3AAC0fQNGKZ/k
+   eJzt2rtOwlAYwPFTUkzAXVYGdhfdGRzkHVQiUcLgziKmm/oAOBqjiU/hoC/g7QW87D6Al8HvhJKUq7WlPYXz/yVfqG2txfyHk4JSAAAAAAAAAAAkY81RatMxfRdA+hp0DwAL6WPKAItoWvOmu79WyjN8C1hQdA8b0T1sNKn3rjOb7ldiPBsy2f2uq1SjN15/ZJ+x+7HFVoxebtzJs54fPDeJ7juO8g5lSjL6OtK+p/sv+e+p7ahqmOuY7H7fVeWa/L+CI/suTN2PLeJ0n3XbId8b3duH7s11vyHrGd19XV73XFWVua3TfSrS7F6vR9L7a9nvfsfvXnfekt5bvebLdJ+8sG3Epdfc3cDaOw1Z716jezNY55jtvimdNwPd9382dT9Z9581w5r/XGPc9x/p3kz3RWl8WWZ1aGr+qxzzijzPHBB1zTDu+490b6b7ytAznHFToXtEkOXuCyG6L9A9Ishy90BS6B42onvYiO5ho7Q+kwOyhO5hI7qHjfrdv+WUes+NbmvHeaVOZE7zo7//Iue95kb3/3UMiOpgKf412n7339LnT250W7uT3i9lrsZ0/ynnfU1oe9oxwKR76fJR5knmIcT2Mx0DQGrOXdN3MB88WQeeBdaCR4HtzgzWiEgX3c8O/c8PugcAoOcXo6Gd7g==
   </data>
  </layer>
  <layer name="trees" width="190" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt20tOwlAUgOFzoSMXgI8RO1CUTbgKTRy5AzGY3D2IU8I2TFiBjxlhTAzqLtRDwWhDC4kt1N7zf8lJmxaTDn7tTakiQPX1I5F7nUH0t/NAFdE9LKJ7WDTr+nJN96vOA1VE97CoT88wiO5hEd3DIrqHRXQfpisn0nHx1n8f23Px+OyfsoPuw9TTxtsu3voj3bZ0jufjW/NjvuxrLBPdh+vOZU+P7hEous8WUvcPNZFHnSed51rZV7PezoavsZ3R/GkB3d84mRRzlchrqh296rzpvFeg+03L+lt/kbP7rpOmzkRn1r8czre+a/weUpYPbf1z1ntdxNWT5waReN61KIY23iz7GpC0r70f1JeP0z3PMENG98sai95P3M8+wnq/nu7TNX6t73ddvEaP1+aWhfSe8ba6Z81QfVXpPs9zyqK6Z82AbcvznHKk3Y8K+t1mzYBtWvWcEghZ1vodCBndwyK6h0V0D4voHhbRPSyiewAA/q9OTeR68R37mW7PU75v1/NeP+dXfSbNrX6ux/8ZAQCAFMMouT+swLu5QF7jKLk/pnsYQPcAgBC9pNzPpmvucV/1H3a4
+   eJzt20tOwlAUgOFzoWvAx4gdKMomdBOa6MQdiMHk7kGcErZhwgp8zAhjYlB3oR4KRqstRNtQe8//JSdtWkw6+LU3pYoA1dePRG50BtHfzgNVRPewiO5h0azrsxXdLzsPVBHdw6I+PcMguodFdA+L6B4W0X2Yzp1Ix8Vb/3Fs08Xjs3/KDroPU08bb7t463d129LZm49vzY/5sq+xTHQfrmuXPT26R6DoPltI3d/WRO507nUeamVfTfnaGc0fFND9pZNJMVeJvKba+pPOs84L3Wf+rT/J2X3XSVNnojPrX3bmW981fg8py6u2/jbrvS7i6slzg0g871oUQxtvln0NSNrS3rfrP4/TPc8wQ0b3PzUWve+7z32E9X493adrfFnfb7h4jR6vzS0L6T3jdXXPmqH6qtJ9nueURXXPmgHrluc55Ui7HxX0u82aAeu07DklELKs9TsQMrqHRXQPi+geFtE9LKJ7WET3AAD8X52ayMXiO/Yj3R6nfN+u571+zi/7TJor/VyP/zMCAAAphlFyf1iBd3OB3zr89u7oOEruj+keATqlewCAAY8p97PpinvcOy4Ed1w=
   </data>
  </layer>
  <layer name="leaves" width="190" height="40">
@@ -70,7 +69,7 @@
  </layer>
  <layer name="collision" width="190" height="40" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztnNtOxCAQhnu3ddU3MCa+qS/sne6Fh0Q22oSwHAYYmAH+L5nEbDgN/dpSuuu2AbAWbyfpEQDQH3gPVgTegxWB92BF4P24nPdtuzfxYOJxlx6NDk57OF6sgPdgReA9WBF4D1YE3o9BbN2aCnALvB8Hn8tnPNMWAe/H5NjLOc4D7OnkAe91cz0+dgAeMJe6sY8PjhUfmEvdwHsauc/0mEs+qGsSt1xsLwbetwFzyQfV0RyX3bI1+5mhd/b2u3tfzMiseUnQw/uW+NrX7AdlPRMqozkvjcT2y+H9OMyaFzeU/XJ4Pw6z5lVC7XufHt7XRKpPeC/LqN85ae19DTN7X+LKCHnt/+O/U+r7Abwfh9Hy4roHpK4RpesLu04IeC/PrHnV4vO+tH6q7dJ2Ssczg/c17ymuaM3LRmJd784LvJ8L7XnFzls3OM8Lzd5jP6eeWfPKxb2naPe+Bng/b15UfPeTK/Cep69epO5xvvIaeTfj+jBxKXim5ADe8/SlFS15fZpxfJn4NvGTsSfYCnjP05dWpPKKee4C7+vGQq2f6uvJrAGf9+3V/TtFrCy1nZw1DIVeTuV47pI7xuPZNLS/Q9n3gfc8fXFRezxS7XFR47kLtS71mkAp55vn0n3DWNsU73td60LzIBmhsWnxntNzlxzvKfUo5Vpe57Q9u6Q+l6K196VtcF+HYv2UlFvZ+9j3l+D9ra/2/KTWx73mCd6365/yuRSar/c9GNl7jf8jAd7T60v+1kPK+17PaxJRM8+90OC9JBLezwy8/6v/C46D9ww=
+   eJztnNtOAyEQhveua9U3aEx8U1/YO+2Fh0Qa24RQDgMMzAD/l0xiGk7DfrvLsq3bBsBavB+kRwBAf+A9WBF4D1YE3oMVgffjcty37dHEk4nnXXo0Ojjs4Xi1At6DFYH3YEXgPVgReD8GsXVrKsA98H4cfC4f8UxbBLwfk9tezu08wJ5OHvBeN5fjYwfgAXOpG/v44FjxgbnUDbynkftMj7nkg7omccvF9mLgfRswl3xQHc1x2S1bs58Zemdvv7v3xYzMmpcEPbxvia99zX5Q1jOhMprz0khsvxzej8OseXFD2S+H9+Mwa14l1L736eF9TaT6hPeyjPqdk9be1zCz9yWujJDXfh3/g1Lfb8D7cRgtL657QOoaUbq+sOuEgPfyzJpXLT7vS+un2i5tp3Q8M3hf857igta8bCTW9e68wPu50J5X7Lx1g/O80Ow99nPqmTWvXNx7inbva4D38+ZFxXc/uQDvefrqReoe5yuvkQ8zrk8T54JnSg7gPU9fWtGS15cZx7eJHxO/GXuCrYD3PH1pRSqvmOcu8L5uLNT6qb5OZg34sm9v7t8pYmWp7eSsYSj0cirHc5fcMZ6ua/TQ/g5l3wfe8/TFRe3xSLXHRY3nLtS61GsCpZxvnkv3DWNtU7zvda0LzYNkhMamxXtOz11yvKfUo5RreZ3T9uyS+lyK1t6XtsF9HYr1U1JuZe9j31+C9/e+2vOTWh/3mid4365/yudSaL7e92Bk7zX+jwR4T68v+VsPKe97Pa9JRM0890KD95JIeD8z8P6//h9wUfch
   </data>
  </layer>
  <objectgroup color="#000000" name="nodes" width="190" height="40">
@@ -114,7 +113,7 @@
     <property name="enemytype" value="crab"/>
    </properties>
   </object>
-  <object type="enemy" x="2712" y="336" width="48" height="48">
+  <object type="enemy" x="2640" y="336" width="48" height="48">
    <properties>
     <property name="enemytype" value="crab"/>
    </properties>
@@ -477,13 +476,6 @@
    </properties>
   </object>
   <object name="guard" type="npc" x="4416" y="72" width="48" height="48"/>
-  <object name="well" type="door" x="984" y="576" width="24" height="24">
-   <properties>
-    <property name="level" value="gay-island-6"/>
-    <property name="sound" value="false"/>
-    <property name="to" value="treedown2"/>
-   </properties>
-  </object>
   <object name="treeup2" type="door" x="2880" y="432" width="24" height="48"/>
   <object type="breakable_block" x="2496" y="816" width="24" height="24">
    <properties>
@@ -517,7 +509,7 @@
     <property name="info" value="it's a bush...|nothing more"/>
    </properties>
   </object>
-  <object type="enemy" x="2424" y="864" width="48" height="48">
+  <object type="enemy" x="2928" y="864" width="48" height="48">
    <properties>
     <property name="enemytype" value="hermitCrab"/>
    </properties>
@@ -3776,11 +3768,6 @@
     <property name="enemytype" value="crab"/>
    </properties>
   </object>
-  <object type="info" x="2712" y="336" width="24" height="48">
-   <properties>
-    <property name="info" value="This Door is boarded from the outside"/>
-   </properties>
-  </object>
   <object type="climbable" x="3264" y="360" width="24" height="432">
    <properties>
     <property name="blockTop" value="true"/>
@@ -3821,12 +3808,61 @@
     <property name="to" value="treeup2"/>
    </properties>
   </object>
-  <object type="spawn" x="1992" y="312" width="48" height="48">
+  <object type="info" x="2640" y="336" width="24" height="24">
    <properties>
-    <property name="enemytype" value="crab"/>
-    <property name="nodeType" value="enemy"/>
-    <property name="spawnMax" value="20"/>
-    <property name="spawnType" value="proximity"/>
+    <property name="info" value="to small to fit into"/>
+   </properties>
+  </object>
+  <object name="house" type="door" x="2568" y="336" width="24" height="48">
+   <properties>
+    <property name="level" value="abandoned-house"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+  <object type="info" x="2712" y="336" width="24" height="48">
+   <properties>
+    <property name="info" value="This Door is boarded from the Outside"/>
+   </properties>
+  </object>
+  <object name="balcony" type="door" x="2568" y="264" width="24" height="24">
+   <properties>
+    <property name="level" value="abandoned-upstairs"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+  <object name="black" type="door" x="2712" y="864" width="24" height="48">
+   <properties>
+    <property name="level" value="basement"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="dark"/>
+   </properties>
+  </object>
+  <object name="princess" type="door" x="1824" y="504" width="24" height="48">
+   <properties>
+    <property name="level" value="princess-house"/>
+    <property name="to" value="main"/>
+   </properties>
+  </object>
+  <object name="princessw" type="door" x="1776" y="504" width="24" height="24">
+   <properties>
+    <property name="level" value="princess-house"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="window"/>
+   </properties>
+  </object>
+  <object name="shedw" type="door" x="2664" y="168" width="24" height="24">
+   <properties>
+    <property name="level" value="shed"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="window"/>
+   </properties>
+  </object>
+  <object name="shed" type="door" x="2688" y="168" width="24" height="48">
+   <properties>
+    <property name="level" value="abandoned-shed"/>
+    <property name="to" value="main"/>
    </properties>
   </object>
  </objectgroup>

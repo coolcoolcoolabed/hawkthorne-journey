@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="22" height="12" tilewidth="24" tileheight="24">
+ <properties>
+  <property name="jumping" value="false"/>
+  <property name="soundtrack" value="tavern"/>
+ </properties>
+ <tileset firstgid="1" name="inside_hidden" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/inside_hidden.png" width="288" height="240"/>
+ </tileset>
+ <tileset firstgid="121" name="inside" tilewidth="24" tileheight="24">
+  <image source="../images/tilesets/inside.png" width="288" height="240"/>
+ </tileset>
+ <layer name="background" width="22" height="12">
+  <data encoding="base64" compression="zlib">
+   eJyLYWBgiBlCuI1GZrZR2ew2LJgWZsIwPxC3k4HxmUmuufxEmkuq2cSYS04Y4AuHxcThBhwYroYMM9HNxSVHqpkkYQDY9oPR
+  </data>
+ </layer>
+ <layer name="foreground" width="22" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANWM3AsIAGZjJsB5pLTbOhZoIBtcxGNhMGKDUbm5nIZk9nYEggB+MyEwSmk+tYiN4GUszdzcDgsAeIqW0usQCo9wA2caBlCTD2FiAbGRNjLlA/QxseM2HgGBImFiCbjc1MEECPb1LNBgAJ/jUE
+  </data>
+ </layer>
+ <layer name="accents" width="22" height="12">
+  <data encoding="base64" compression="zlib">
+   eJybzsDQwEBlMB2CR82lk7lAtgMFZh3AZS42MA2KSbSDoLmLoBgZiFHBXGIBWnjSNT1sZ2BYsBqI0dmUmkspAJkLABccHzg=
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" name="floorspace" width="22" height="12">
+  <object x="72" y="216">
+   <properties>
+    <property name="primary" value="true"/>
+   </properties>
+   <polygon points="0,0 360,0 432,72 -72,72"/>
+  </object>
+  <object x="384" y="216" width="60" height="8">
+   <properties>
+    <property name="height" value="36"/>
+   </properties>
+  </object>
+  <object x="384" y="264">
+   <properties>
+    <property name="height" value="27"/>
+   </properties>
+   <polygon points="0,0 96,0 120,24 24,24"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="nodes" width="22" height="12">
+  <object name="main" type="door" x="312" y="168" width="24" height="48">
+   <properties>
+    <property name="level" value="gay-island-6"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="balcony"/>
+   </properties>
+  </object>
+  <object type="sprite" x="384" y="240" width="120" height="48">
+   <properties>
+    <property name="depth" value="18"/>
+    <property name="height" value="47"/>
+    <property name="sheet" value="images/sprites/town/bed.png"/>
+    <property name="width" value="95"/>
+   </properties>
+  </object>
+  <object type="sprite" x="480" y="216" width="24" height="48">
+   <properties>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/town/bed_headboard.png"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object type="sprite" x="384" y="180" width="72" height="48">
+   <properties>
+    <property name="depth" value="8"/>
+    <property name="flip" value="true"/>
+    <property name="height" value="44"/>
+    <property name="sheet" value="images/sprites/town/dresser.png"/>
+    <property name="width" value="72"/>
+   </properties>
+  </object>
+  <object type="sprite" x="24" y="228" width="24" height="48">
+   <properties>
+    <property name="height" value="48"/>
+    <property name="sheet" value="images/sprites/town/barrel.png"/>
+    <property name="width" value="24"/>
+   </properties>
+  </object>
+  <object name="downstairs" type="door" x="144" y="240" width="72" height="24">
+   <properties>
+    <property name="level" value="abandoned-house"/>
+    <property name="sound" value="false"/>
+    <property name="to" value="upstairs"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
