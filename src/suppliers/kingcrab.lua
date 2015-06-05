@@ -9,6 +9,7 @@ return {
     {"arrow",24,5},
   },
   materials = {
+    {"monkeydoll",1,2000},
     {"mushroom",2,30},
     {"duck",1,34},
     {"banana",6,45},
