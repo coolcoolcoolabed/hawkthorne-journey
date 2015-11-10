@@ -8,7 +8,7 @@ local quests = require 'npcs/quests/telescopejuanquest'
 return {
   width = 48,
   height = 48,  
-  greeting = 'My name is {{red_light}}Juan{{white}}.  I am the resident astronomer of {{olive}}Tacotown{{white}}.', 
+  greeting = 'My name is {{red_light}}Juan{{white}}. I am the resident astronomer of {{olive}}Tacotown{{white}}.', 
   animations = {
     default = {
       'loop',{'1-2,1'},0.60,
@@ -43,7 +43,7 @@ return {
   talk_commands = {
     ['So you believe in aliens?']= function(npc, player)
       Quest:activate(npc, player, quests.alien)
-      end,
+    end,
   },
 
   talk_responses = {

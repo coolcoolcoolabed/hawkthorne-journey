@@ -76,7 +76,7 @@ return {
 
   enter = function( enemy )
     if enemy.db:get("bosstriggers.benzalk", false) then
-      enemy:die()
+      enemy:die(true)
     end
     enemy.direction = 'left'
     enemy.state = 'default'
@@ -121,7 +121,7 @@ return {
     love.graphics.draw( bossPic, x + 69, y + 10 )
 
     love.graphics.setColor( 0, 0, 0, 255 )
-    love.graphics.printf( "Benzalk", x + 15, y + 15, 52, 'center' )
+    love.graphics.printf( "BENZALK", x + 15, y + 15, 52, 'center' )
     love.graphics.printf( "GUARD", x + 15, y + 41, 52, 'center' )
 
     energy_stencil = function( x, y )
@@ -328,3 +328,4 @@ return {
     end
   end
 }
+
